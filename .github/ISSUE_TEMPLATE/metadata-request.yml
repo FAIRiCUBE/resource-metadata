@@ -1,0 +1,378 @@
+name: Resource Metadata Request
+description: Request a resource metadata to be made available to FAIRiCUBE use cases.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide the information requested below. Mandatory elements are marked with `*`.
+  - type: markdown
+    attributes:
+      value: |-
+        # Resource Metadata Request
+  # inizio - name
+  - type: textarea
+    id: Name_of_resource
+    attributes:
+      label: Name of resource
+      description: Textual name identifying the resource. Resource can be the algorithm, the model, or the pre-processing pipeline.
+    validations:
+      required: true
+  # id
+  - type: input
+    id: id
+    attributes:
+      label: ID
+      description: Globally unique and persistent identifier of the resource.
+    validations:
+      required: true  
+  # description  
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Description of the resource.
+    validations:
+      required: true
+  # main category
+  - type: dropdown
+    id: main-category
+    attributes:
+      label: Main category
+      description: |-
+        Main category of the resource, e.g. ML, ingestion, pre-processing. 
+        Notice that the codelist contains also some specific elements to further specify the resource (e.g., "DL" as a special case of "ML"). 
+      multiple: false
+      options:
+        - ML
+        - DL
+        - Pre-processing
+        - Ingestion
+    validations:
+      required: true
+  # other category
+  - type: dropdown
+    id: other-category
+    attributes:
+      label: Other category
+      description: This element should be used to categorise the resource according to possible vocabularie
+      multiple: true
+      options:
+        - A
+        - B
+    validations:
+      required: False
+  # pubblication date 
+  - type: textarea
+    id: pubblication-date
+    attributes:
+      label: Pubblication date 
+      description: Date of publication - i.e., first sharing with the scientific community - of the resource.
+    validations:
+      required: true
+  # objective
+  - type: dropdown
+    id: objective
+    attributes:
+      label: Objective
+      description: This element should be used to provide info about “What does the resource perform”, i.e., the purpose of the resource.
+      multiple: true
+      options:
+        - object-detection
+        - classification
+        - segmentation
+        - regression
+        - outliers-removing
+        - gap-filling
+        - feature-selection
+        - dimensionality-reduction
+        - feature-scaling
+        - dataset-balancing
+        - data-transformation
+    validations:
+      required: true
+  # platform
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Platform hosting the resource
+      multiple: true
+      options:
+        - EOX
+        - Rasdaman
+        - Google Colab
+        - Kaggle
+        - Microsoft Azure
+        - Amazon AWS
+        - Local Jupyter Notebook
+    validations:
+      required: true
+  # framework
+  - type: dropdown
+    id: framework
+    attributes:
+      label: Framework
+      description: |-
+        This field is generally intended as collection of reusable code written by others.
+        In this respect, it includes both frameworks, intended as program scaffolds that supply the blueprint of a product, and libraries, intended as collections of pre-defined methods and classes.
+      multiple: true
+      options:
+        - PyTorch
+        - Tensorflow
+        - Scikit-learn
+        - Keras
+        - Pandas
+        - Numpy
+        - OpenCV
+        - XGBoost
+        - Theano
+        - imblearn
+        - pillow
+    validations:
+      required: true
+  # architecture
+  - type: dropdown
+    id: architecture
+    attributes:
+      label: Architecture
+      description: |-
+        This is a conditional element, applied only to ML algorithms.
+        This field has a different meaning than "algorithm" because there are often multiple "implementations" of an architecture.
+      multiple: false
+      options:
+        - random-forest
+        - cnn
+        - decision-tree
+        - ensemble
+        - gradient-based
+        - density-based
+    validations:
+      required: false
+  # approach
+  - type: dropdown
+    id: approach
+    attributes:
+      label: Approach
+      description: This is a conditional element, applied only to ML algorithms, identifying the learning modality.
+      multiple: false
+      options:
+        - supervised
+        - unsupervised
+        - semi-supervised
+        - reinforcement-learning
+    validations:
+      required: false
+  # algorithm
+  - type: dropdown
+    id: algorithm
+    attributes:
+      label: Algorithm
+      description: |-
+        This field contains the name of the algorithm, i.e., an implementation of an architecture.
+        This field has a different meaning than ‘architecture’ because there are often multiple "implementations" of an architecture.
+      multiple: false
+      options:
+        - Random-Forest-Classifier
+        - Convolutional-Neural-Network
+        - K-means
+        - Min-max-normalization
+        - DBSCAN
+        - Decision-Tree-Classifier
+        - Random-Forest-Regression
+        - SGD
+        - KNN
+        - SegNet
+        - LeNet
+        - Decision-Tree-Regression
+        - Voting-Classifier
+        - AdaBoost-Classifier
+        - AdaBoost-Regression
+        - SMOTE
+        - custom-method
+    validations:
+      required: true
+  # processor
+  - type: dropdown
+    id: processor
+    attributes:
+      label: Processor
+      description: |- 
+        Type of processor used for training or inference in learning tasks, but also for running a pre-processing notebook. 
+        If more than one processor is used to perform the entire task, indicate the one with the highest computing power.
+      multiple: false
+      options:
+        - cpu
+        - gpu
+        - tpu
+    validations:
+      required: true
+  # OS
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      description: Operating System System used.
+      multiple: false
+      options:
+        - aix
+        - linux
+        - win32
+        - cygwin
+        - darwin
+        - macOS
+    validations:
+      required: true
+  # keyword
+  - type: textarea
+    id: keyword
+    attributes:
+      label: Keyword
+      description: |-
+        A series of keywords which can facilitate the resource discoverability.
+        These keywords can be used for a quick search of resources and should highlight foremost characteristics of the resource.  
+        For the categorization of the resources via keywords to be effective, we recommend that a maximum of 5 keywords is provided. 
+    validations:
+      required: true
+  # reference-link
+  - type: input
+    id: reference-link
+    attributes:
+      label: Reference link
+      description: Link(s) to resource web page and/or download page
+    validations:
+      required: false
+  # example
+  - type: input
+    id: example
+    attributes:
+      label: Example
+      description: Link(s) to websites (including publications) providing examples of how the resource has been used.
+    validations:
+      required: false
+  # input-data
+  - type: input
+    id: input-data
+    attributes:
+      label: Input data
+      description: Link to input data/metadata, helpful for a better understanding of context and domain.
+    validations:
+      required: true
+  # Characteristics of input data
+  - type: textarea
+    id: characteristics-of-input-data
+    attributes:
+      label: Characteristics of input data
+      description: |-
+        The field contains a textual description of the main characteristics of each input data to the resource.
+        This field will also include e.g., description of sampling techniques, version of the data (if multiple versions are available), and, in the case of ML resources, also
+        the percentages of training, validation and testing sets. This field may contain details on the suitability of the resource for the chosen geographic area and thematic context.
+    validations:
+      required: true
+  # Biases and ethical aspects
+  - type: textarea
+    id: biases-and-ethical-aspects
+    attributes:
+      label: Biases and ethical aspects
+      description: |-
+        This field may contain observations on the data and/or any biases found.
+        This field is optional but strongly recommended for pre-processing resources.
+        In the case of ML resources, this field is closely related to the performance field.
+    validations:
+      required: false
+  # output-data
+  - type: input
+    id: output-data
+    attributes:
+      label: Output data
+      description: Link to output data/metadata.
+    validations:
+      required: true
+  # Characteristics of output data
+  - type: textarea
+    id: characteristics-of-output-data
+    attributes:
+      label: Characteristics of output data
+      description: Textual description of the output data from the resource.
+    validations:
+      required: true
+  # performance
+  - type: textarea
+    id: perfmance
+    attributes:
+      label: Performance
+      description: This field contains result description and explanation, including a detailed description of the hyperparameters used, the run times, the metrics used for evaluation, and the respective scores and performance.
+    validations:
+      required: false
+  # Conditions for access and use
+  - type: dropdown
+    id: conditions-for-access-and-use
+    attributes:
+      label: Conditions for access and use
+      description: Type of distribution license for the resource.
+      multiple: false
+      options:
+        - MIT
+        - afl-3.0
+        - agpl-3.0
+        - artistic-2.0
+        - bigscience-bloom-rail-1.0
+        - bigscience-openrail-m
+        - bsd
+        - bsd-2-clause
+        - bsd-3-clause
+        - bsd-3-clause-clear
+        - bsl-1.0
+        - cc
+        - cc0-1.0
+        - cc-by-2.0
+        - cc-by-2.5
+        - cc-by-3.0
+        - cc-by-4.0
+        - cc-by-nc-2.0
+        - cc-by-nc-3.0
+        - cc-by-nc-4.0
+        - cc-by-nc-nd-3.0
+        - cc-by-nc-nd-4.0
+        - cc-by-nc-sa-2.0
+        - cc-by-nc-sa-3.0
+        - cc-by-nc-sa-4.0
+        - cc-by-nd-4.0
+        - cc-by-sa-3.0
+        - cc-by-sa-4.0
+        - creativeml-openrail-m
+        - c-uda
+        - ecl-2.0
+        - epl-1.0
+        - epl-2.0
+        - eupl-1.1
+        - gfdl
+        - gpl
+        - gpl-2.0
+        - gpl-3.0
+        - isc
+        - lgpl
+        - lgpl-2.1
+        - lgpl-3.0
+        - lgpl-lr
+        - mpl-2.0
+        - ms-pl
+        - ncsa
+        - odbl
+        - odc-by
+        - ofl-1.1
+        - openrail
+        - openrail++
+        - osl-3.0
+        - pddl
+        - postgresql
+        - wtfpl
+    validations:
+      required: true
+  # Constraints
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+      description: This element can be used to provide information about possible constraints related to the use of the resource.
+    validations:
+      required: false
