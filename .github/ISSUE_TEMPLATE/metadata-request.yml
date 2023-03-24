@@ -141,7 +141,7 @@ body:
       multiple: false
       options:
         - random-forest
-        - cnn
+        - dnn
         - decision-tree
         - ensemble
         - gradient-based
