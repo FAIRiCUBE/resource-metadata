@@ -54,7 +54,7 @@ body:
     id: other-category
     attributes:
       label: Other category
-      description: This element should be used to categorise the resource according to possible vocabularie
+      description: This element should be used to categorise the resource according to possible vocabularie. The codelist is not yet available.
       multiple: true
       options:
         - A
