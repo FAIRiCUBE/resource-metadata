@@ -148,6 +148,13 @@ body:
         - gradient-based
         - density-based
         - datacubes
+        - rnn
+        - cnn
+        - snn
+        - dbn
+        - dsn
+        - svm
+        - probabilistic-model
     validations:
       required: false
   # approach
@@ -192,6 +199,8 @@ body:
         - SMOTE
         - custom-method
         - WCPS
+        - Logistic-Regression
+        - Naive-Bayes
     validations:
       required: true
   # processor
@@ -223,6 +232,7 @@ body:
         - cygwin
         - darwin
         - macOS
+        - windows
     validations:
       required: true
   # keyword
