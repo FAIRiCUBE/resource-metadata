@@ -47,6 +47,7 @@ body:
         - DL
         - Pre-processing
         - Ingestion
+        - Analytics
     validations:
       required: true
   # other category
@@ -88,6 +89,7 @@ body:
         - feature-scaling
         - dataset-balancing
         - data-transformation
+        - analytics
     validations:
       required: true
   # platform
