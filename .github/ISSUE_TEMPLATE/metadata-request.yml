@@ -269,8 +269,8 @@ body:
   - type: input
     id: input-data
     attributes:
-      label: Input data
-      description: Link to input data/metadata, helpful for a better understanding of context and domain.
+      label: Input data used
+      description: Link to data or to the relevant metadata used to run the a/p resource. This information is required for a better understanding of context and domain.
     validations:
       required: true
   # Characteristics of input data
