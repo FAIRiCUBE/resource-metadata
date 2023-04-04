@@ -270,7 +270,7 @@ body:
     id: input-data
     attributes:
       label: Input data used
-      description: Link to data or to the relevant metadata used to run the a/p resource. This information is required for a better understanding of context and domain.
+      description: Link to data (or related metadata) to which the a/p resource has been applied. This information is required for a better understanding of context and domain of the a/p resource.
     validations:
       required: true
   # Characteristics of input data
@@ -299,8 +299,8 @@ body:
   - type: input
     id: output-data
     attributes:
-      label: Output data
-      description: Link to output data/metadata.
+      label: Output data obtained
+      description: Link to output data (or related metadata) produced by execution of the a/p resource. This information is required for a better understanding of the a/p resource.
     validations:
       required: true
   # Characteristics of output data
