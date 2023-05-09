@@ -132,6 +132,8 @@ body:
         - imblearn
         - pillow
         - Rasdaman
+        - MXNet
+        - Apache-Spark
     validations:
       required: true
   # architecture
