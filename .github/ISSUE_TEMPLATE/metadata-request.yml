@@ -91,6 +91,7 @@ body:
         - dataset-balancing
         - data-transformation
         - analytics
+        - clustering
     validations:
       required: true
   # platform
