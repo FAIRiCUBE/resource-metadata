@@ -151,13 +151,15 @@ body:
         - gradient-based
         - density-based
         - datacubes
-        - rnn
-        - cnn
-        - snn
-        - dbn
-        - dsn
-        - svm
+        - RNN – Recurrent-Neural-Network
+        - CNN – Convolutional-Neural-Network
+        - Feed-Forward-Neural-Network
+        - DBN – Deep-Belief-Network
+        - DSN – Deep-Stacking-Network
+        - SVM – Support-Vector-Machine
         - probabilistic-model
+        - Perceptron
+        - Multilayer-Perceptron
     validations:
       required: false
   # approach
