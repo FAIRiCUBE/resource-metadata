@@ -193,18 +193,18 @@ body:
         - Convolutional-Neural-Network
         - K-means
         - Min-max-normalization
-        - DBSCAN
+        - DBSCAN - Density-Based-Spatial-Clustering-of-Applications-with-Noise
         - Decision-Tree-Classifier
         - Random-Forest-Regression
-        - SGD
-        - KNN
+        - SGD – Stochastic-Gradient-Descent
+        - KNN – K-nearest-neighbors
         - SegNet
         - LeNet
         - Decision-Tree-Regression
         - Voting-Classifier
         - AdaBoost-Classifier
         - AdaBoost-Regression
-        - SMOTE
+        - SMOTE – Synthetic-Minority-Oversampling-TEchnique
         - custom-method
         - WCPS
         - Logistic-Regression
