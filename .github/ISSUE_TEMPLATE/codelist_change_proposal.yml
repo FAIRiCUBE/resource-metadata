@@ -4,7 +4,6 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please fill out this issue to the best of your knowledge, this will help the governance and release process move forward.
         Provide a brief description of the change proposal - e.g. specify if you are proposing a new value or want to update/replace an existing one.
         Mandatory elements are marked with `*`.
   - type: markdown
