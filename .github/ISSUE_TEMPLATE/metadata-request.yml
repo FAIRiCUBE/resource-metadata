@@ -44,8 +44,8 @@ body:
         Notice that the codelist contains also some specific elements to further specify the resource (e.g., "DL" as a special case of "ML"). 
       multiple: false
       options:
-        - ML
-        - DL
+        - Machine Learning
+        - Deep Learning
         - Pre-processing
         - Ingestion
         - Analytics
