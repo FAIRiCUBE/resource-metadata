@@ -1,0 +1,56 @@
+name: Codelist change proposal
+description: Use this template to propose a change to a codelist.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out this issue to the best of your knowledge, this will help the governance and release process move forward.
+        Provide a brief description of the change proposal - e.g. specify if you are proposing a new value or want to update/replace an existing one.
+        Mandatory elements are marked with `*`.
+  - type: markdown
+    attributes:
+      value: |-
+        # Codelist change proposal
+    # start fields
+  - type: textarea
+    id: codelist_name
+    attributes:
+      label: Codelist name
+      description: Specify the name of the codelist addressed.
+    validations:
+      required: true
+  - type: textarea
+    id: codelist_value
+    attributes:
+      label: Codelist value
+      description: Specify the name of the codelist value.
+    validations:
+      required: true
+  - type: textarea
+    id: codelist_value_description
+    attributes:
+      label: Codelist value description
+      description: Specify the description of the codelist value.
+    validations:
+      required: true
+  - type: textarea
+    id: issue_faced
+    attributes:
+      label: Issue faced
+      description: Provide a comprehensive description of the change proposal, e.g. new value, change of existing value.
+    validations:
+      required: true
+  - type: textarea
+    id: change_proposer
+    attributes:
+      label: Change proposer
+      description: Specify the submitting person, organisation or group of people/organisations.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: If relevant, provide links to more detailed documentation / online discussions in publicly available resources (e.g. GitHub repositories, Forum discussions ...).
+    validations:
+      required: false
