@@ -196,8 +196,8 @@ body:
         - DBSCAN - Density-Based-Spatial-Clustering-of-Applications-with-Noise
         - Decision-Tree-Classifier
         - Random-Forest-Regression
-        - SGD – Stochastic-Gradient-Descent
-        - KNN – K-nearest-neighbors
+        - SGD-Classifier – Stochastic-Gradient-Descent
+        - KNN-Classifier – K-nearest-neighbors
         - SegNet
         - LeNet
         - Decision-Tree-Regression
