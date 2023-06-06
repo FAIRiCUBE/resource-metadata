@@ -20,8 +20,6 @@
             "rel": "parent",
             "type": "application/json"
         }
-    ],
-    "assets": {
-    }
+    ]
   }
 }
