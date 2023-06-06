@@ -19,7 +19,7 @@
             "href": "https://fairicube.github.io/resource-metadata/index.json",
             "rel": "parent",
             "type": "application/json"
-        },
+        }
     ],
     "assets": {
     }
