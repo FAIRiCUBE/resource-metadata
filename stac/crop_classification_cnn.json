@@ -1,0 +1,27 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "stac_extensions": [],
+    "id": "1",
+    "description": "An example convolutional neural network trained on 7 Sentinel-2 images throughout the Dutch growing season, using bands R, G, B, and NIR of each image, and ground truth data taken from the Dutch agricultural land registration. All data used was from 2018, and the model has been trained to infer 76 different crop types.",
+    "links": [
+        {
+            "href": "https://fairicube.github.io/resource-metadata/crop_classification_cnn.json",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://fairicube.github.io/resource-metadata/index.json",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "href": "https://fairicube.github.io/resource-metadata/index.json",
+            "rel": "parent",
+            "type": "application/json"
+        },
+    ],
+    "assets": {
+    }
+  }
+}

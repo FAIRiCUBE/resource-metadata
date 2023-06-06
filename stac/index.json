@@ -1,0 +1,24 @@
+{
+    "type": "Catalog",
+    "stac_version": "1.0.0",
+    "id": "fairicube-hub-resource-catalog",
+    "description": "A STAC catalog that contains all resource collections available on the FAIRiCUBE Hub.",
+    "links": [
+        {
+            "href": "https://fairicube.github.io/resource-metadata/index.json",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://fairicube.github.io/resource-metadata/index.json",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "id": "ERA5_WIND_V",
+            "href": "https://fairicube.github.io/resource-metadata/crop_classification_cnn.json",
+            "rel": "child",
+            "type": "application/json"
+        }
+    ]
+}
