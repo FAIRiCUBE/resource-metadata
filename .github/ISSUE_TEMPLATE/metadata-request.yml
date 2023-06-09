@@ -287,8 +287,6 @@ body:
         The field contains a textual description of the main characteristics of each input data to the resource.
         This field will also include e.g., description of sampling techniques, version of the data (if multiple versions are available), and, in the case of ML resources, also
         the percentages of training, validation and testing sets. This field may contain details on the suitability of the resource for the chosen geographic area and thematic context.
-      label: ee
-      description: fcd
     validations:
       required: true
   # Biases and ethical aspects
