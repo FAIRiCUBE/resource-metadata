@@ -252,12 +252,7 @@ body:
         A series of keywords which can facilitate the resource discoverability.
         These keywords can be used for a quick search of resources and should highlight foremost characteristics of the resource.  
         For the categorization of the resources via keywords to be effective, we recommend that a maximum of 5 keywords is provided.
-      value: |-
-        1. Keyword-1,
-        2. Keyword-2,
-        3. Keyword-3,
-        4. Keyword-4,
-        5. Keyword-5
+      value: Keyword-1, Keyword-2, ... , Keyword-5
     validations:
       required: true
   # reference-link
