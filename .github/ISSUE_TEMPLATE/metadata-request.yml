@@ -275,7 +275,14 @@ body:
     id: input-data
     attributes:
       label: Input data used
-      description: Link to data (or related metadata) to which the a/p resource has been applied. This information is required for a better understanding of context and domain of the a/p resource.
+      description: |- 
+        Link to data (or related metadata) to which the a/p resource has been applied. This information is required for a better understanding of context and domain of the a/p resource.
+        To insert the values, delete 'Link-1', 'Link-2' etc. and, keeping the number of the bulleted list, insert the various links.
+      value: |-
+        1. Link-1
+        2. Link-2
+        ...
+        n. Link-n
     validations:
       required: true
   # Characteristics of input data
@@ -287,6 +294,12 @@ body:
         The field contains a textual description of the main characteristics of each input data to the resource.
         This field will also include e.g., description of sampling techniques, version of the data (if multiple versions are available), and, in the case of ML resources, also
         the percentages of training, validation and testing sets. This field may contain details on the suitability of the resource for the chosen geographic area and thematic context.
+        To insert values, delete 'Characteristics of the Link-1', 'Characteristics of the Link-2' etc. and, keeping the number in the bulleted list, enter the characteristics of the input data. Each characteristic refers to the respective link, in the same position, in the input data field. E.g. the characteristic in 1. refers to the link in 1.
+      value: |-
+        1. Characteristics of the Link-1
+        2. Characteristics of the Link-2
+        ...
+        n. Characteristics of the Link-n
     validations:
       required: true
   # Biases and ethical aspects
@@ -305,7 +318,14 @@ body:
     id: output-data
     attributes:
       label: Output data obtained
-      description: Link to output data (or related metadata) produced by execution of the a/p resource. This information is required for a better understanding of the a/p resource.
+      description: |-
+        Link to output data (or related metadata) produced by execution of the a/p resource. This information is required for a better understanding of the a/p resource.
+        To insert the values, delete 'Link-1', 'Link-2' etc. and, keeping the number of the bulleted list, insert the various links.
+      value: |-
+        1. Link-1
+        2. Link-2
+        ...
+        n. Link-n
     validations:
       required: true
   # Characteristics of output data
@@ -313,7 +333,14 @@ body:
     id: characteristics-of-output-data
     attributes:
       label: Characteristics of output data
-      description: Textual description of the output data from the resource.
+      description: |-
+        Textual description of the output data from the resource.         
+        To insert values, delete 'Characteristics of the Link-1', 'Characteristics of the Link-2' etc. and, keeping the number in the bulleted list, enter the characteristics of the input data. Each characteristic refers to the respective link, in the same position, in the input data field. E.g. the characteristic in 1. refers to the link in 1.
+      value: |-
+        1. Characteristics of the Link-1
+        2. Characteristics of the Link-2
+        ...
+        n. Characteristics of the Link-n
     validations:
       required: true
   # performance
