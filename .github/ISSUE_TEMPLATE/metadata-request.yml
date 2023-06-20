@@ -317,7 +317,7 @@ body:
         For example
         1. 
         2. biases and ethical aspects of the Link-2
-        If no link contains biases, leave the entire cell empty by deleting all its contents.
+        If no link contains biases and ethical aspects, leave the entire cell empty by deleting all its contents.
       value: |-
         1. Biases and ethical aspects of the Link-1
         2. Biases and ethical aspects of the Link-2
