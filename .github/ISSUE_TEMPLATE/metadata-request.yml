@@ -77,7 +77,7 @@ body:
     attributes:
       label: Objective
       description: This element should be used to provide info about “What does the resource perform”, i.e., the purpose of the resource.
-      multiple: true
+      multiple: False
       options:
         - object-detection
         - classification
@@ -312,6 +312,12 @@ body:
         This field may contain observations on the data and/or any biases found.
         This field is optional but strongly recommended for pre-processing resources.
         In the case of ML resources, this field is closely related to the performance field.
+        To insert values, delete 'Biases and ethical aspects of the Link-1', 'Biases and ethical aspects of the Link-2' etc. and, keeping the number in the bulleted list, enter the biases and ethical aspects of the input data. Each biases and ethical aspects refers to the respective link, in the same position, in the input data field. E.g. the biases and ethical aspects in 1. refers to the link in 1.
+      value: |-
+        1. Biases and ethical aspects of the Link-1
+        2. Biases and ethical aspects of the Link-2
+        ...
+        n. Biases and ethical aspects of the Link-n
     validations:
       required: false
   # output-data
