@@ -77,7 +77,7 @@ body:
     attributes:
       label: Objective
       description: This element should be used to provide info about “What does the resource perform”, i.e., the purpose of the resource.
-      multiple: False
+      multiple: false
       options:
         - object-detection
         - classification
@@ -100,7 +100,7 @@ body:
     attributes:
       label: Platform
       description: Platform hosting the resource
-      multiple: true
+      multiple: false
       options:
         - EOX
         - Rasdaman
