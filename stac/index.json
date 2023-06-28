@@ -15,9 +15,9 @@
             "type": "application/json"
         },
         {
-            "id": "ml collection",
+            "id": "ml_collection",
             "href": "https://fairicube.github.io/resource-metadata/ml_collection.json",
-            "rel": "child",
+            "rel": "collection",
             "type": "application/json"
         }
     ]
