@@ -1,8 +1,14 @@
+import config
+
+
 # There are two functions in this file that have the same implementation for ML resources and for no-ML resources
 
 # This function builds, taking as input the array of the Reference link field and that of the Example field,
 # the 'links' section of the STAC file.
-def build_link(reference_link_array, example_array):
+def build_link(reference_link_array, example_array, ml=True):
+    collection = config.ml_collection
+    if not ml:
+        collection = config.no_ml_collection
     # the fields are not mandatory
     if reference_link_array is None:
         reference_link_array = []
@@ -11,15 +17,15 @@ def build_link(reference_link_array, example_array):
     link = []
     root = {
         "rel": "root",
-        "href": "./collection.json",
+        "href": "./index.json",
         "type": "application/json",
         "title": "Root Catalog"
     }
     parent = {
         "rel": "parent",
-        "href": "./collection.json",
+        "href": "./" + collection + ".json",
         "type": "application/json",
-        "title": "Root Catalog"
+        "title": collection
     }
     collection = {
         "rel": "collection",
