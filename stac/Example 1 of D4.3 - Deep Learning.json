@@ -35,19 +35,19 @@
     "links": [
         {
             "rel": "root",
-            "href": "./collection.json",
+            "href": "./index.json",
             "type": "application/json",
             "title": "Root Catalog"
         },
         {
             "rel": "parent",
-            "href": "./collection.json",
+            "href": "./index.json",
             "type": "application/json",
             "title": "Root Catalog"
         },
         {
             "rel": "collection",
-            "href": "./collection.json",
+            "href": "./ml_collection.json",
             "type": "application/json"
         },
         {
