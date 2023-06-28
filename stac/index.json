@@ -15,8 +15,8 @@
             "type": "application/json"
         },
         {
-            "id": "ERA5_WIND_V",
-            "href": "https://fairicube.github.io/resource-metadata/crop_classification_cnn.json",
+            "id": "ml collection",
+            "href": "https://fairicube.github.io/resource-metadata/ml_collection.json",
             "rel": "child",
             "type": "application/json"
         }
