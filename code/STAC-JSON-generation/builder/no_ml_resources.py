@@ -69,7 +69,7 @@ def build_no_ml_stac(dictionary, path='file/no_ml.json'):
             no_ml.get('OS'): dictionary.get('OS'),
             "use-constraints": common_blocks.build_conditional_properties(dictionary),
         },
-        "links": common_blocks.build_link(dictionary.get('Reference link'), dictionary.get('Example')),
+        "links": common_blocks.build_link(dictionary.get('Reference link'), dictionary.get('Example'), ml=False),
         "assets": build_assets(dictionary.get('Input data used'), dictionary.get('Characteristics of input data'),
                                dictionary.get('Output data obtained'),
                                dictionary.get('Characteristics of output data'),
