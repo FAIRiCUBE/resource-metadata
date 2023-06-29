@@ -4,7 +4,7 @@
     "stac_extensions": [],
     "title": "Analysis and processing resources collection",
     "id": "ap_resource_collection",
-    "description": "An example of ML collection.",
+    "description": "FAIRiCUBE analysis and processing resources collection.",
     "license": "various",
     "keywords": [
         "Machine Learning",
