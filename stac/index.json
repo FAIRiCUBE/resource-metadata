@@ -19,14 +19,14 @@
             "title": "ML collection",
             "id": "ml_collection",
             "href": "https://fairicube.github.io/resource-metadata/ml_collection.json",
-            "rel": "collection",
+            "rel": "child",
             "type": "application/json"
         },
         {
             "title": "no-ML collection",
             "id": "no_ml_collection",
             "href": "https://fairicube.github.io/resource-metadata/no_ml_collection.json",
-            "rel": "collection",
+            "rel": "child",
             "type": "application/json"
         }
     ]
