@@ -41,7 +41,7 @@
         },
         {
             "rel": "collection",
-            "href": "./ml_collection.json",
+            "href": "./no_ml_collection.json",
             "type": "application/json"
         },
         {
