@@ -16,16 +16,16 @@
             "type": "application/json"
         },
         {
-            "title": "Analysis and processing resources collection",
-            "id": "ap_resource_collection",
-            "href": "https://fairicube.github.io/resource-metadata/ap_resource_collection.json",
+            "title": "ML resources collection",
+            "id": "ml_collection",
+            "href": "https://fairicube.github.io/resource-metadata/ml_collection.json",
             "rel": "child",
             "type": "application/json"
         },
         {
-            "title": "ML",
-            "id": "ml",
-            "href": "https://fairicube.github.io/resource-metadata/ap_resource_collection.json",
+            "title": "no-ML resources collection",
+            "id": "no_ml_collection",
+            "href": "https://fairicube.github.io/resource-metadata/no_ml_collection.json",
             "rel": "child",
             "type": "application/json"
         }
