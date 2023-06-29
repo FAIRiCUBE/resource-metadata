@@ -2,6 +2,7 @@
     "type": "Collection",
     "stac_version": "1.0.0",
     "stac_extensions": [],
+    "title": "ml_collection",
     "id": "ml_collection",
     "description": "An example of ML collection.",
     "license": "various",
