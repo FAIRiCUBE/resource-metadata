@@ -38,7 +38,7 @@
         {
             "href": "https://fairicube.github.io/resource-metadata/Example 1 of D4.3 - Deep Learning.json",
             "rel": "item",
-            "type": "application/json"
+            "type": "application/geo+json"
         }
     ]
 }
