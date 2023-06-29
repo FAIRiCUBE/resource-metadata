@@ -42,12 +42,17 @@ def run():
             # dictionary building
             dictionary = dictionary_builder.get_dictionary(txt_filename)
             # STAC file building
-            builder_interface.build_stac_file(dictionary, stac_filename)
+            collection_filename = builder_interface.build_stac_file(dictionary, stac_filename, title)
 
             # opening the file to be uploaded to GitHub
             with open(stac_filename, 'r') as stac:
                 stac_file = stac.read()
             stac.close()
+
+            # opening the collection to be updated to GitHub
+            with open(collection_filename, 'r') as c:
+                collection_file = c.read()
+            c.close()
 
             # with open(txt_filename, 'r') as markdown:
             #     markdown_file = markdown.read()
@@ -61,12 +66,16 @@ def run():
             stac_in_repo = False
             # sha_markdown = ''
             sha_stac = ''
+            # sha collection
+            sha_collection = ''
             files = repo.get_contents(config.stac_files_repo_folder)
+            collection = ''
             for f in range(len(files)):
                 if files[f].path == stac_filename:
                     stac_in_repo = True
                     sha_stac = files[f].sha
-                    break
+                if files[f].path == collection_filename:
+                    sha_collection = files[f].sha
                 # if files[f].path == txt_filename:
                 #     markdown_in_repo = True
                 #     sha_markdown = files[f].sha
@@ -82,5 +91,7 @@ def run():
             else:
                 repo.create_file(stac_filename, 'upload', stac_file, branch='main')
             print('STAC file uploaded...')
-
-    print('Execution completed')
+            # collection updating
+            repo.update_file(collection_filename, 'update', collection_file, sha_collection, branch='main')
+            print('collection updated')
+    print('\n\nExecution completed')
