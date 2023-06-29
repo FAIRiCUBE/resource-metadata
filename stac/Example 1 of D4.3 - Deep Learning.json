@@ -5,7 +5,7 @@
         "https://stac-extensions.github.io/ml-model/v1.0.0/schema.json"
     ],
     "id": "lenet_classifier",
-    "collection": "ml-resources",
+    "collection": "ml_collection",
     "geometry": null,
     "properties": {
         "title": "LeNet Classifier",
@@ -41,9 +41,9 @@
         },
         {
             "rel": "parent",
-            "href": "./ml-resources.json",
+            "href": "./ml_collection.json",
             "type": "application/json",
-            "title": "ml-resources"
+            "title": "ml_collection"
         },
         {
             "rel": "collection",
