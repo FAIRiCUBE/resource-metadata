@@ -18,7 +18,7 @@
         {
             "title": "Analysis and processing resources collection",
             "id": "ap_resource_collection",
-            "href": "https://fairicube.github.io/resource-metadata/no_ml_collection.json",
+            "href": "https://fairicube.github.io/resource-metadata/ap_resource_collection.json",
             "rel": "collection",
             "type": "application/json"
         }
