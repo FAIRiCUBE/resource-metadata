@@ -2,7 +2,7 @@
     "type": "Feature",
     "stac_version": "1.0.0",
     "id": "JPEG_to_numpy_transformation",
-    "collection": "ap_resource_collection",
+    "collection": "no_ml_collection",
     "geometry": null,
     "properties": {
         "title": "JPEG images to numpy array transformation",
@@ -35,13 +35,13 @@
         },
         {
             "rel": "parent",
-            "href": "./ap_resource_collection.json",
+            "href": "./no_ml_collection.json",
             "type": "application/json",
-            "title": "ap_resource_collection"
+            "title": "no_ml_collection"
         },
         {
             "rel": "collection",
-            "href": "./ap_resource_collection.json",
+            "href": "./no_ml_collection.json",
             "type": "application/json"
         },
         {
