@@ -21,6 +21,13 @@
             "href": "https://fairicube.github.io/resource-metadata/ap_resource_collection.json",
             "rel": "collection",
             "type": "application/json"
+        },
+        {
+            "title": "ML",
+            "id": "ml",
+            "href": "https://fairicube.github.io/resource-metadata/ap_resource_collection.json",
+            "rel": "collection",
+            "type": "application/json"
         }
     ]
 }
