@@ -2,7 +2,7 @@
     "type": "Catalog",
     "stac_version": "1.0.0",
     "id": "fairicube-hub-resource-catalog",
-    "title": "FAIRiCUBE Hub a/p resources catalog",
+    "title": "FAIRiCUBE Hub analysis and processing resources catalog",
     "description": "A STAC catalog that contains all resource collections available on the FAIRiCUBE Hub.",
     "links": [
         {
