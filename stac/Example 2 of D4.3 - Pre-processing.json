@@ -2,7 +2,7 @@
     "type": "Feature",
     "stac_version": "1.0.0",
     "id": "SMOTE_dataset_balancing",
-    "collection": "no_ml_collection",
+    "collection": "ap_resource_collection",
     "geometry": null,
     "properties": {
         "title": "SMOTE dataset balancing",
@@ -33,13 +33,13 @@
         },
         {
             "rel": "parent",
-            "href": "./no_ml_collection.json",
+            "href": "./ap_resource_collection.json",
             "type": "application/json",
-            "title": "no_ml_collection"
+            "title": "ap_resource_collection"
         },
         {
             "rel": "collection",
-            "href": "./no_ml_collection.json",
+            "href": "./ap_resource_collection.json",
             "type": "application/json"
         },
         {
