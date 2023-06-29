@@ -4,6 +4,15 @@
     "stac_extensions": [],
     "id": "ml_collection",
     "description": "An example of ML collection.",
+    "license": "various",
+    "extent": {
+        "spatial": {
+        "bbox": [ [-180.0, -90.0, 180.0, 90.0] ]
+        },
+        "temporal": {
+            "interval": [ [null, null] ]
+        }
+    },
     "links": [
         {
             "href": "https://fairicube.github.io/resource-metadata/ml_collection.json",
