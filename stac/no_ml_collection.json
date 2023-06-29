@@ -50,12 +50,12 @@
         {
             "href": "https://fairicube.github.io/resource-metadata/Example 3 of D4.3 - Pre-processing.json",
             "rel": "item",
-            "type": "application/json"
+            "type": "application/geo+json"
         },
         {
             "href": "https://fairicube.github.io/resource-metadata/Example 2 of D4.3 - Pre-processing.json",
             "rel": "item",
-            "type": "application/json"
+            "type": "application/geo+json"
         }
     ]
 }
