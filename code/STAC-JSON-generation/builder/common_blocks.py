@@ -1,3 +1,4 @@
+import json
 import config
 
 
@@ -29,7 +30,7 @@ def build_link(reference_link_array, example_array, ml=True):
     }
     collection = {
         "rel": "collection",
-        "href": "./collection.json",
+        "href": "./" + collection + ".json",
         "type": "application/json"
     }
     link.append(root)
@@ -70,3 +71,24 @@ def build_conditional_properties(dictionary):
     if use_constraints is None:
         return 'no Constraint of Use'
     return use_constraints
+
+
+def update_collection(collection_filename, item_name):
+    # open collection
+    f = open(collection_filename)
+    data = json.load(f)
+    f.close()
+    # item check
+    for link in data['links']:
+        if link.get('href') == config.github_io_link + item_name:
+            return
+    # new item appending
+    new_item = {
+        "href": config.github_io_link + item_name,
+        "rel": "item",
+        "type": "application/geo+json"
+    }
+    data['links'].append(new_item)
+    with open(collection_filename, "w+") as outfile:
+        json.dump(data, outfile, indent=4)
+    outfile.close()
