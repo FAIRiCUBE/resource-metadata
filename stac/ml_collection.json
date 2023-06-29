@@ -6,10 +6,6 @@
     "id": "ML collection",
     "description": "An example of ML collection.",
     "license": "various",
-    "keywords" : [
-        "Machine Learning",
-        "Deep Learning"
-    ],
     "extent": {
         "spatial": {
             "bbox": [ [-180.0, -90.0, 180.0, 90.0] ]
