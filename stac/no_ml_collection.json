@@ -8,10 +8,22 @@
     "license": "various",
     "extent": {
         "spatial": {
-            "bbox": [ [-180.0, -90.0, 180.0, 90.0] ]
+            "bbox": [
+                [
+                    -180.0,
+                    -90.0,
+                    180.0,
+                    90.0
+                ]
+            ]
         },
         "temporal": {
-            "interval": [ [null, null] ]
+            "interval": [
+                [
+                    null,
+                    null
+                ]
+            ]
         }
     },
     "links": [
@@ -28,6 +40,16 @@
         {
             "href": "https://fairicube.github.io/resource-metadata/index.json",
             "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://fairicube.github.io/resource-metadata/Example 3 of D4.3 - Pre-processing.json",
+            "rel": "item",
+            "type": "application/json"
+        },
+        {
+            "href": "https://fairicube.github.io/resource-metadata/Example 2 of D4.3 - Pre-processing.json",
+            "rel": "item",
             "type": "application/json"
         }
     ]
