@@ -3,7 +3,7 @@
     "stac_version": "1.0.0",
     "stac_extensions": [],
     "title": "no-ML collection",
-    "id": "no-ML collection",
+    "id": "no_ml_collection",
     "description": "An example of no-ML collection.",
     "license": "various",
     "extent": {
