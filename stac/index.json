@@ -4,7 +4,7 @@
     "id": "fairicube-hub-resource-catalog",
     "title": "FAIRiCUBE Hub analysis and processing resources catalog",
     "description": "A STAC catalog that contains all resource collections available on the FAIRiCUBE Hub.",
-     "conformsTo": [
+    "conformsTo": [
         "https://api.stacspec.org/v1.0.0-rc.1/ogcapi-features/extensions/transaction",
         "https://api.stacspec.org/v1.0.0-rc.1/core",
         "https://api.stacspec.org/v1.0.0-rc.1/ogcapi-features",
