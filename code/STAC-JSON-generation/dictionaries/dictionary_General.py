@@ -5,7 +5,7 @@ def build():
     dictionary['ID'] = 'id'
     dictionary['Description'] = 'description'
     dictionary['Main category'] = 'main-category'
-    dictionary['Pubblication date'] = 'datetime'
+    dictionary['Publication date'] = 'datetime'
     dictionary['Keyword'] = 'keywords'
     dictionary['Platform'] = 'platform'
     dictionary['Framework'] = 'framework'
