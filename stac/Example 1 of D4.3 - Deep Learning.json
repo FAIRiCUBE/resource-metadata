@@ -11,7 +11,7 @@
         "title": "LeNet Classifier",
         "description": "Multi-layer Convolutional Neural Network for image classification",
         "main-category": "Deep Learning",
-        "null": null,
+        "datetime": null,
         "keywords": [
             "classification",
             "CNN",
