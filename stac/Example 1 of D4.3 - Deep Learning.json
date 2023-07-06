@@ -11,7 +11,7 @@
         "title": "LeNet Classifier",
         "description": "Multi-layer Convolutional Neural Network for image classification",
         "main-category": "Deep Learning",
-        "datetime": "1998",
+        "null": null,
         "keywords": [
             "classification",
             "CNN",
@@ -27,7 +27,7 @@
         "ml-model:type": "ml-model",
         "ml-model:learning_approach": "supervised",
         "ml-model:prediction_type": "classification",
-        "ml-model:architecture": "cnn",
+        "ml-model:architecture": "CNN \u2013 Convolutional-Neural-Network",
         "ml-model:training-processor-type": "gpu",
         "ml-model:training-os": "linux",
         "use-constraints": "no Constraint of Use"
