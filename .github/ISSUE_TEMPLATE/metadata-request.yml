@@ -65,9 +65,9 @@ body:
       required: False
   # pubblication date 
   - type: textarea
-    id: pubblication-date
+    id: publication-date
     attributes:
-      label: Pubblication date 
+      label: Publication date 
       description: Date of publication - i.e., first sharing with the scientific community - of the resource.
     validations:
       required: true
