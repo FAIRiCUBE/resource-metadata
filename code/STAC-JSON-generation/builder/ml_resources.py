@@ -63,7 +63,7 @@ def build_ml_stac(dictionary, path='file/ml.json'):
             general.get('Name of resource'): dictionary.get('Name of resource'),
             general.get('Description'): dictionary.get('Description'),
             general.get('Main category'): dictionary.get('Main category'),
-            general.get('Publication date'): dictionary.get('Pubblication date'),
+            general.get('Publication date'): dictionary.get('Publication date'),
             general.get('Keyword'): dictionary.get('Keyword'),
             general.get('Platform'): dictionary.get('Platform'),
             general.get('Framework'): dictionary.get('Framework'),
