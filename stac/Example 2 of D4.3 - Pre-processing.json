@@ -16,7 +16,7 @@
         ],
         "platform": "Google Colab",
         "framework": "imblearn",
-        "algorithm": "SMOTE \u2013 Synthetic-Minority-Oversampling-TEchnique",
+        "algorithm": "SMOTE - Synthetic-Minority-Oversampling-TEchnique",
         "license": "CC-BY-4.0",
         "processor-used": "cpu",
         "operating-system-used": "linux",
