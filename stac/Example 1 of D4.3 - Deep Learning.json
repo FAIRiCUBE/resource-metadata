@@ -41,13 +41,13 @@
         },
         {
             "rel": "parent",
-            "href": "./fairicube-hub-resource-catalog.json",
+            "href": "./index.json",
             "type": "application/json",
             "title": "fairicube-hub-resource-catalog"
         },
         {
             "rel": "collection",
-            "href": "./fairicube-hub-resource-catalog.json",
+            "href": "./index.json",
             "type": "fairicube-hub-resource-catalog/json"
         },
         {
