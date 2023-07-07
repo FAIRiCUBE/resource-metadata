@@ -1,5 +1,5 @@
 {
-    "type": "Collection",
+    "type": "Catalog",
     "stac_version": "1.0.0",
     "id": "fairicube-hub-resource-catalog",
     "title": "analysis and processing resources",
