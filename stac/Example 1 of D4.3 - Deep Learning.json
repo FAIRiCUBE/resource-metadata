@@ -19,7 +19,6 @@
         ],
         "platform": "Google Colab",
         "framework": [
-            "Tensorflow",
             "Keras"
         ],
         "algorithm": "LeNet",
