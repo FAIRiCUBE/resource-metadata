@@ -16,9 +16,7 @@
             "jpeg"
         ],
         "platform": "Google Colab",
-        "framework": [
-            "OpenCV"
-        ],
+        "framework": "OpenCV",
         "algorithm": "custom-method",
         "license": "CC-BY-4.0",
         "processor-used": "cpu",
