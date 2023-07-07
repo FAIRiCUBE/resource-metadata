@@ -5,7 +5,7 @@
         "https://stac-extensions.github.io/ml-model/v1.0.0/schema.json"
     ],
     "id": "lenet_classifier",
-    "collection": "ml_collection",
+    "collection": "fairicube-hub-resource-catalog",
     "geometry": null,
     "properties": {
         "title": "LeNet Classifier",
