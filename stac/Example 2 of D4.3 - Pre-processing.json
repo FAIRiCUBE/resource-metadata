@@ -16,7 +16,6 @@
         ],
         "platform": "Google Colab",
         "framework": [
-            "Numpy",
             "imblearn"
         ],
         "algorithm": "SMOTE \u2013 Synthetic-Minority-Oversampling-TEchnique",
