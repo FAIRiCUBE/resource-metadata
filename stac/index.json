@@ -3,7 +3,7 @@
     "stac_version": "1.0.0",
     "id": "fairicube-hub-resource-catalog",
     "title": "analysis and processing resources",
-    "description": "A STAC catalog that contains all resource collections available on the FAIRiCUBE Hub.",
+    "description": "A STAC catalog that contains all resources available on the FAIRiCUBE Hub.",
     "conformsTo": [
         "https://api.stacspec.org/v1.0.0-rc.1/ogcapi-features/extensions/transaction",
         "https://api.stacspec.org/v1.0.0-rc.1/core",
