@@ -43,12 +43,13 @@
             "rel": "parent",
             "href": "./index.json",
             "type": "application/json",
-            "title": "fairicube-hub-resource-catalog"
+            "title": "index"
         },
         {
             "rel": "collection",
             "href": "./index.json",
-            "type": "fairicube-hub-resource-catalog/json"
+            "type": "application/json",
+            "title": "index"
         },
         {
             "href": "https://en.wikipedia.org/wiki/LeNet",
