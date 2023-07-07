@@ -2,7 +2,7 @@
     "type": "Feature",
     "stac_version": "1.0.0",
     "id": "JPEG_to_numpy_transformation",
-    "collection": "fairicube-hub-resource-catalog",
+    "collection": "no_ml_collection",
     "geometry": null,
     "properties": {
         "title": "JPEG images to numpy array transformation",
@@ -36,15 +36,15 @@
         },
         {
             "rel": "parent",
-            "href": "./index.json",
+            "href": "./no_ml_collection.json",
             "type": "application/json",
-            "title": "index"
+            "title": "no_ml_collection"
         },
         {
             "rel": "collection",
-            "href": "./index.json",
+            "href": "./no_ml_collection.json",
             "type": "application/json",
-            "title": "index"
+            "title": "no_ml_collection"
         },
         {
             "href": "https://github.com/cozzolinoac11/wildfire_prediction/blob/main/img_to_NPY_transformation.ipynb",
