@@ -15,9 +15,7 @@
             "SMOTE"
         ],
         "platform": "Google Colab",
-        "framework": [
-            "imblearn"
-        ],
+        "framework": "imblearn",
         "algorithm": "SMOTE \u2013 Synthetic-Minority-Oversampling-TEchnique",
         "license": "CC-BY-4.0",
         "processor-used": "cpu",
