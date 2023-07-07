@@ -2,8 +2,8 @@
     "type": "Catalog",
     "stac_version": "1.0.0",
     "id": "fairicube-hub-resource-catalog",
-    "title": "analysis and processing resources",
-    "description": "A STAC catalog that contains all resources available on the FAIRiCUBE Hub.",
+    "title": "FAIRiCUBE Hub analysis and processing resources catalog",
+    "description": "A STAC catalog that contains all resource collections available on the FAIRiCUBE Hub.",
     "conformsTo": [
         "https://api.stacspec.org/v1.0.0-rc.1/ogcapi-features/extensions/transaction",
         "https://api.stacspec.org/v1.0.0-rc.1/core",
@@ -36,19 +36,16 @@
             "type": "application/json"
         },
         {
-            "href": "https://fairicube.github.io/resource-metadata/Example 1 of D4.3 - Deep Learning.json",
-            "rel": "item",
-            "type": "application/geo+json"
+            "href": "https://fairicube.github.io/resource-metadata/ml_collection.json",
+            "rel": "child",
+            "type": "application/json",
+            "title": "ml_collection"
         },
         {
-            "href": "https://fairicube.github.io/resource-metadata/Example 3 of D4.3 - Pre-processing.json",
-            "rel": "item",
-            "type": "application/geo+json"
-        },
-        {
-            "href": "https://fairicube.github.io/resource-metadata/Example 2 of D4.3 - Pre-processing.json",
-            "rel": "item",
-            "type": "application/geo+json"
+            "href": "https://fairicube.github.io/resource-metadata/no_ml_collection.json",
+            "rel": "child",
+            "type": "application/json",
+            "title": "no_ml_collection"
         }
     ]
 }
