@@ -2,7 +2,7 @@
     "type": "Feature",
     "stac_version": "1.0.0",
     "id": "SMOTE_dataset_balancing",
-    "collection": "fairicube-hub-resource-catalog",
+    "collection": "no_ml_collection",
     "geometry": null,
     "properties": {
         "title": "SMOTE dataset balancing",
@@ -34,15 +34,15 @@
         },
         {
             "rel": "parent",
-            "href": "./index.json",
+            "href": "./no_ml_collection.json",
             "type": "application/json",
-            "title": "index"
+            "title": "no_ml_collection"
         },
         {
             "rel": "collection",
-            "href": "./index.json",
+            "href": "./no_ml_collection.json",
             "type": "application/json",
-            "title": "index"
+            "title": "no_ml_collection"
         },
         {
             "href": "https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTE.html",
