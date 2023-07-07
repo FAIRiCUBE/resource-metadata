@@ -18,9 +18,7 @@
             "LeNet"
         ],
         "platform": "Google Colab",
-        "framework": [
-            "Keras"
-        ],
+        "framework": "Keras",
         "algorithm": "LeNet",
         "license": "CC-BY-4.0",
         "ml-model:type": "ml-model",
