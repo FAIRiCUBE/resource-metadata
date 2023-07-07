@@ -17,9 +17,7 @@
         ],
         "platform": "Google Colab",
         "framework": [
-            "Numpy",
-            "OpenCV",
-            "pillow"
+            "OpenCV"
         ],
         "algorithm": "custom-method",
         "license": "CC-BY-4.0",
