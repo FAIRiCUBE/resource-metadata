@@ -36,18 +36,19 @@
             "type": "application/json"
         },
         {
-            "title": "ML resources collection",
-            "id": "ml_collection",
-            "href": "https://fairicube.github.io/resource-metadata/ml_collection.json",
-            "rel": "child",
-            "type": "application/json"
+            "href": "https://fairicube.github.io/resource-metadata/Example 1 of D4.3 - Deep Learning.json",
+            "rel": "item",
+            "type": "application/geo+json"
         },
         {
-            "title": "no-ML resources collection",
-            "id": "no_ml_collection",
-            "href": "https://fairicube.github.io/resource-metadata/no_ml_collection.json",
-            "rel": "child",
-            "type": "application/json"
+            "href": "https://fairicube.github.io/resource-metadata/Example 3 of D4.3 - Pre-processing.json",
+            "rel": "item",
+            "type": "application/geo+json"
+        },
+        {
+            "href": "https://fairicube.github.io/resource-metadata/Example 2 of D4.3 - Pre-processing.json",
+            "rel": "item",
+            "type": "application/geo+json"
         }
     ]
 }
