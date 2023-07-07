@@ -24,7 +24,7 @@
         "ml-model:type": "ml-model",
         "ml-model:learning_approach": "supervised",
         "ml-model:prediction_type": "classification",
-        "ml-model:architecture": "CNN \u2013 Convolutional-Neural-Network",
+        "ml-model:architecture": "CNN - Convolutional-Neural-Network",
         "ml-model:training-processor-type": "gpu",
         "ml-model:training-os": "linux",
         "use-constraints": "no Constraint of Use"
