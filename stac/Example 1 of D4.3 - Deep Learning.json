@@ -5,7 +5,7 @@
         "https://stac-extensions.github.io/ml-model/v1.0.0/schema.json"
     ],
     "id": "lenet_classifier",
-    "collection": "fairicube-hub-resource-catalog",
+    "collection": "ml_collection",
     "geometry": null,
     "properties": {
         "title": "LeNet Classifier",
@@ -41,15 +41,15 @@
         },
         {
             "rel": "parent",
-            "href": "./index.json",
+            "href": "./ml_collection.json",
             "type": "application/json",
-            "title": "index"
+            "title": "ml_collection"
         },
         {
             "rel": "collection",
-            "href": "./index.json",
+            "href": "./ml_collection.json",
             "type": "application/json",
-            "title": "index"
+            "title": "ml_collection"
         },
         {
             "href": "https://en.wikipedia.org/wiki/LeNet",
