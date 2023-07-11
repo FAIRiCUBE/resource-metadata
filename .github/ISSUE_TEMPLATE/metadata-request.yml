@@ -119,7 +119,7 @@ body:
       description: |-
         This field is generally intended as collection of reusable code written by others.
         In this respect, it includes both frameworks, intended as program scaffolds that supply the blueprint of a product, and libraries, intended as collections of pre-defined methods and classes.
-      multiple: true
+      multiple: false
       options:
         - PyTorch
         - Tensorflow
