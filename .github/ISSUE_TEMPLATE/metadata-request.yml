@@ -190,7 +190,7 @@ body:
       multiple: false
       options:
         - Random-Forest-Classifier
-        - Convolutional-Neural-Network
+        - CNN - Convolutional-Neural-Network
         - K-means
         - Min-max-normalization
         - DBSCAN - Density-Based-Spatial-Clustering-of-Applications-with-Noise
