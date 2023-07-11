@@ -164,6 +164,7 @@ body:
         - probabilistic-model
         - Perceptron
         - Multilayer-Perceptron
+        - Gaussian-Mixture
     validations:
       required: false
   # approach
