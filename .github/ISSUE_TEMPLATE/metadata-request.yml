@@ -92,6 +92,7 @@ body:
         - data-transformation
         - analytics
         - clustering
+        - anomaly-detection
     validations:
       required: true
   # platform
