@@ -154,12 +154,12 @@ body:
         - gradient-based
         - density-based
         - datacubes
-        - RNN – Recurrent-Neural-Network
-        - CNN – Convolutional-Neural-Network
+        - RNN - Recurrent-Neural-Network
+        - CNN - Convolutional-Neural-Network
         - Feed-Forward-Neural-Network
-        - DBN – Deep-Belief-Network
-        - DSN – Deep-Stacking-Network
-        - SVM – Support-Vector-Machine
+        - DBN - Deep-Belief-Network
+        - DSN - Deep-Stacking-Network
+        - SVM - Support-Vector-Machine
         - probabilistic-model
         - Perceptron
         - Multilayer-Perceptron
@@ -196,15 +196,15 @@ body:
         - DBSCAN - Density-Based-Spatial-Clustering-of-Applications-with-Noise
         - Decision-Tree-Classifier
         - Random-Forest-Regression
-        - SGD-Classifier – Stochastic-Gradient-Descent
-        - KNN-Classifier – K-nearest-neighbors
+        - SGD-Classifier - Stochastic-Gradient-Descent
+        - KNN-Classifier - K-nearest-neighbors
         - SegNet
         - LeNet
         - Decision-Tree-Regression
         - Voting-Classifier
         - AdaBoost-Classifier
         - AdaBoost-Regression
-        - SMOTE – Synthetic-Minority-Oversampling-TEchnique
+        - SMOTE - Synthetic-Minority-Oversampling-TEchnique
         - custom-method
         - WCPS
         - Logistic-Regression
