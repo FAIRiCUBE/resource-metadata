@@ -10,7 +10,21 @@ body:
     attributes:
       value: |-
         # Resource Metadata Request
-  # inizio - name
+  # inizio
+  - type: dropdown
+    id: uc
+    attributes:
+      label: Use case
+      description: Use case to which the resource belongs
+      multiple: false
+      options:
+        - UC1
+        - UC2
+        - UC3
+        - UC4
+        - common
+    validations:
+      required: true
   - type: textarea
     id: Name_of_resource
     attributes:
