@@ -2,7 +2,7 @@
     "type": "Feature",
     "stac_version": "1.0.0",
     "id": "SMOTE_dataset_balancing",
-    "collection": "no_ml_collection",
+    "collection": "no-ML collection",
     "geometry": null,
     "properties": {
         "title": "SMOTE dataset balancing",
@@ -25,21 +25,21 @@
     "links": [
         {
             "rel": "root",
-            "href": "./index.json",
+            "href": "https://stacapi.eoxhub.fairicube.eu/",
             "type": "application/json",
-            "title": "Root Catalog"
+            "title": "Root"
         },
         {
             "rel": "parent",
-            "href": "./no_ml_collection.json",
+            "href": "https://stacapi.eoxhub.fairicube.eu/collections/no-ML collection",
             "type": "application/json",
-            "title": "no_ml_collection"
+            "title": "no-ML collection"
         },
         {
             "rel": "collection",
-            "href": "./no_ml_collection.json",
+            "href": "https://stacapi.eoxhub.fairicube.eu/collections/no-ML collection",
             "type": "application/json",
-            "title": "no_ml_collection"
+            "title": "no-ML collection"
         },
         {
             "href": "https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTE.html",
@@ -57,7 +57,7 @@
     "assets": {
         "input-data-used": {
             "href": "https://public.epsilon-italia.it/FAIRiCUBE/wildfire-classification/data_numpy.zip",
-            "type": "application/json",
+            "type": "application/zip",
             "title": "Input data used",
             "description": "Numpy arrays with unbalanced classes (47.9% - 52.1%)",
             "biases-and-ethical-aspects": "Initial unbalanced dataset",
@@ -67,7 +67,7 @@
         },
         "output-data-obtained": {
             "href": "https://public.epsilon-italia.it/FAIRiCUBE/wildfire-classification/balanced_data_numpy.zip",
-            "type": "application/json",
+            "type": "application/zip",
             "title": "Output data obtained",
             "description": "Numpy arrays with balanced classes (50% - 50%)",
             "roles": [
