@@ -28,19 +28,19 @@
             "rel": "root",
             "href": "https://stacapi.eoxhub.fairicube.eu/",
             "type": "application/json",
-            "title": "Root Catalog"
+            "title": "Root"
         },
         {
             "rel": "parent",
             "href": "https://stacapi.eoxhub.fairicube.eu/collections/no-ML collection",
             "type": "application/json",
-            "title": "no_ml_collection"
+            "title": "no-ML collection"
         },
         {
             "rel": "collection",
             "href": "https://stacapi.eoxhub.fairicube.eu/collections/no-ML collection",
             "type": "application/json",
-            "title": "no_ml_collection"
+            "title": "no-ML collection"
         },
         {
             "href": "https://github.com/cozzolinoac11/wildfire_prediction/blob/main/img_to_NPY_transformation.ipynb",
