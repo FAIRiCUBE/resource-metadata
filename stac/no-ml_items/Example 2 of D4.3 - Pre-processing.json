@@ -1,0 +1,78 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "SMOTE_dataset_balancing",
+    "collection": "no-ML collection",
+    "geometry": null,
+    "properties": {
+        "title": "SMOTE dataset balancing",
+        "description": "Dataset balancing using SMOTE oversampling technique. A balanced dataset is a dataset where each output class (or target class) is represented by the same number of input samples. Imbalanced data is not always a bad thing and there is always some degree of imbalance in real data sets. That said, if the level of imbalance is relatively low, there should not be much impact on the performance of the model but, in some cases, working on unbalanced data could introduce a high error rate. Imbalanced data is one of the potential problems in the field of data mining and machine learning. This problem can be approached by properly analyzing the data. One way to solve this problem is to oversample the examples in the minority class. This can be achieved by simply duplicating examples from the minority class in the training dataset prior to fitting a model. This can balance the class distribution but does not provide any additional information to the model. An improvement on duplicating examples from the minority class is to synthesize new examples from the minority class. SMOTE works by selecting examples that are close in the feature space, drawing a line between the examples in the feature space and drawing a new sample at a point along that line. Specifically, a random example from the minority class is first chosen. Then k of the nearest neighbors for that example are found (typically k=5). A randomly selected neighbor is chosen, and a synthetic example is created at a randomly selected point between the two examples in feature space.",
+        "main-category": "Pre-processing",
+        "objective": "dataset-balancing",
+        "datetime": "2023-08-05",
+        "keywords": [
+            "dataset balancing",
+            "SMOTE"
+        ],
+        "platform": "Google Colab",
+        "framework": "imblearn",
+        "algorithm": "SMOTE - Synthetic-Minority-Oversampling-TEchnique",
+        "license": "CC-BY-4.0",
+        "processor-used": "cpu",
+        "operating-system-used": "linux",
+        "use-constraints": "no Constraint of Use"
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://stacapi.eoxhub.fairicube.eu/",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "https://stacapi.eoxhub.fairicube.eu/collections/no-ML collection",
+            "type": "application/json",
+            "title": "no-ML collection"
+        },
+        {
+            "rel": "collection",
+            "href": "https://stacapi.eoxhub.fairicube.eu/collections/no-ML collection",
+            "type": "application/json",
+            "title": "no-ML collection"
+        },
+        {
+            "href": "https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTE.html",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Reference link"
+        },
+        {
+            "href": "https://github.com/cozzolinoac11/wildfire_prediction/blob/main/dataset_balancing.ipynb",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Example"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "https://public.epsilon-italia.it/FAIRiCUBE/wildfire-classification/data_numpy.zip",
+            "type": "application/zip",
+            "title": "Input data used",
+            "description": "Numpy arrays with unbalanced classes (47.9% - 52.1%)",
+            "biases-and-ethical-aspects": "Initial unbalanced dataset",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "https://public.epsilon-italia.it/FAIRiCUBE/wildfire-classification/balanced_data_numpy.zip",
+            "type": "application/zip",
+            "title": "Output data obtained",
+            "description": "Numpy arrays with balanced classes (50% - 50%)",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
