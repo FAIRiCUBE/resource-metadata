@@ -2,7 +2,7 @@
     "type": "Feature",
     "stac_version": "1.0.0",
     "id": "JPEG_to_numpy_transformation",
-    "collection": "https://stacapi.eoxhub.fairicube.eu/collections/no-ML collection",
+    "collection": "no-ML collection",
     "geometry": null,
     "properties": {
         "title": "JPEG images to numpy array transformation",
