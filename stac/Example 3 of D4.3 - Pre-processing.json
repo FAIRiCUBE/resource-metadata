@@ -2,7 +2,7 @@
     "type": "Feature",
     "stac_version": "1.0.0",
     "id": "JPEG_to_numpy_transformation",
-    "collection": "no_ml_collection",
+    "collection": "https://stacapi.eoxhub.fairicube.eu/collections/no-ML collection",
     "geometry": null,
     "properties": {
         "title": "JPEG images to numpy array transformation",
@@ -26,19 +26,19 @@
     "links": [
         {
             "rel": "root",
-            "href": "./index.json",
+            "href": "https://stacapi.eoxhub.fairicube.eu/",
             "type": "application/json",
             "title": "Root Catalog"
         },
         {
             "rel": "parent",
-            "href": "./no_ml_collection.json",
+            "href": "https://stacapi.eoxhub.fairicube.eu/collections/no-ML collection",
             "type": "application/json",
             "title": "no_ml_collection"
         },
         {
             "rel": "collection",
-            "href": "./no_ml_collection.json",
+            "href": "https://stacapi.eoxhub.fairicube.eu/collections/no-ML collection",
             "type": "application/json",
             "title": "no_ml_collection"
         },
