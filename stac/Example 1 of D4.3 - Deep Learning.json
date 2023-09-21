@@ -5,13 +5,13 @@
         "https://stac-extensions.github.io/ml-model/v1.0.0/schema.json"
     ],
     "id": "lenet_classifier",
-    "collection": "ml_collection",
+    "collection": "ML collection",
     "geometry": null,
     "properties": {
         "title": "LeNet Classifier",
         "description": "Multi-layer Convolutional Neural Network for image classification",
         "main-category": "Deep Learning",
-        "datetime": "2023-04-04",
+        "datetime": "2023-04-04Z",
         "keywords": [
             "classification",
             "CNN",
@@ -32,21 +32,21 @@
     "links": [
         {
             "rel": "root",
-            "href": "./index.json",
+            "href": "https://stacapi.eoxhub.fairicube.eu/",
             "type": "application/json",
-            "title": "Root Catalog"
+            "title": "Root"
         },
         {
             "rel": "parent",
-            "href": "./ml_collection.json",
+            "href": "https://stacapi.eoxhub.fairicube.eu/collections/ML collection",
             "type": "application/json",
-            "title": "ml_collection"
+            "title": "ML collection"
         },
         {
             "rel": "collection",
-            "href": "./ml_collection.json",
+            "href": "https://stacapi.eoxhub.fairicube.eu/collections/ML collection",
             "type": "application/json",
-            "title": "ml_collection"
+            "title": "ML collection"
         },
         {
             "href": "https://en.wikipedia.org/wiki/LeNet",
@@ -64,7 +64,7 @@
     "assets": {
         "input-data-used": {
             "href": "https://public.epsilon-italia.it/FAIRiCUBE/wildfire-classification/data_numpy.zip",
-            "type": "application/json",
+            "type": "application/zip",
             "title": "Input data used",
             "description": "Numpy arrays. (Perfectly) balanced classes.",
             "biases-and-ethical-aspects": "",
