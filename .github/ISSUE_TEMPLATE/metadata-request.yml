@@ -341,6 +341,15 @@ body:
         n. Biases and ethical aspects of the Link-n
     validations:
       required: false
+  # Model configuration
+  - type: textarea
+    id: model-configuration
+    attributes:
+      label: Model configuration
+      description: |-
+        This field contains the configuration/initialisation data and how the model has been parameterized 
+    validations:
+      required: false
   # output-data
   - type: textarea
     id: output-data
