@@ -27,24 +27,25 @@
         "ml-model:architecture": "CNN - Convolutional-Neural-Network",
         "ml-model:training-processor-type": "gpu",
         "ml-model:training-os": "linux",
-        "use-constraints": "no Constraint of Use"
+        "use-constraints": "no Constraint of Use",
+        "model-configuration": null
     },
     "links": [
         {
             "rel": "root",
-            "href": "https://stacapi.eoxhub.fairicube.eu/",
+            "href": "https://catalog.eoxhub.fairicube.eu/",
             "type": "application/json",
             "title": "Root"
         },
         {
             "rel": "parent",
-            "href": "https://stacapi.eoxhub.fairicube.eu/collections/ML collection",
+            "href": "https://catalog.eoxhub.fairicube.eu/collections/ML%20collection",
             "type": "application/json",
             "title": "ML collection"
         },
         {
             "rel": "collection",
-            "href": "https://stacapi.eoxhub.fairicube.eu/collections/ML collection",
+            "href": "https://catalog.eoxhub.fairicube.eu/collections/ML%20collection",
             "type": "application/json",
             "title": "ML collection"
         },
@@ -64,7 +65,7 @@
     "assets": {
         "input-data-used": {
             "href": "https://public.epsilon-italia.it/FAIRiCUBE/wildfire-classification/data_numpy.zip",
-            "type": "application/zip",
+            "type": "application/json",
             "title": "Input data used",
             "description": "Numpy arrays. (Perfectly) balanced classes.",
             "biases-and-ethical-aspects": "",
