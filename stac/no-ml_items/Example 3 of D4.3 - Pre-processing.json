@@ -26,19 +26,19 @@
     "links": [
         {
             "rel": "root",
-            "href": "https://stacapi.eoxhub.fairicube.eu/",
+            "href": "https://catalog.eoxhub.fairicube.eu/",
             "type": "application/json",
             "title": "Root"
         },
         {
             "rel": "parent",
-            "href": "https://stacapi.eoxhub.fairicube.eu/collections/no-ML collection",
+            "href": "https://catalog.eoxhub.fairicube.eu/collections/no-ML%20collection",
             "type": "application/json",
             "title": "no-ML collection"
         },
         {
             "rel": "collection",
-            "href": "https://stacapi.eoxhub.fairicube.eu/collections/no-ML collection",
+            "href": "https://catalog.eoxhub.fairicube.eu/collections/no-ML%20collection",
             "type": "application/json",
             "title": "no-ML collection"
         },
@@ -62,7 +62,7 @@
         },
         "output-data-obtained": {
             "href": "https://public.epsilon-italia.it/FAIRiCUBE/wildfire-classification/data_numpy.zip",
-            "type": "application/zip",
+            "type": "application/json",
             "title": "Output data obtained",
             "description": "Dataset in format Numpy arrays. The images are resized in 100x100.",
             "roles": [
