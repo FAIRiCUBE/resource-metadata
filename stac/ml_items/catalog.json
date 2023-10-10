@@ -1,0 +1,15 @@
+{
+  "type": "Catalog",
+  "id": "ML-Collection",
+  "stac_version": "1.0.0",
+  "description": "Machine Learning processed items.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "./catalog.json",
+      "type": "application/json",
+      "title": "ML collection"
+    }
+  ],
+  "title": "ML collection"
+}

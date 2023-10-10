@@ -1,0 +1,15 @@
+{
+  "type": "Catalog",
+  "id": "no-ML-Collection",
+  "stac_version": "1.0.0",
+  "description": "A collection of pre-processed datasets.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "./catalog.json",
+      "type": "application/json",
+      "title": "ML collection"
+    }
+  ],
+  "title": "ML collection"
+}

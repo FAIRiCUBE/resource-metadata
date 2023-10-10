@@ -9,7 +9,7 @@
         "description": "Building dataset as numpy array. In machine learning, Python uses image data in the format of a NumPy array, i.e., [Height, Width, Channel] format. Therefore, the images must be transformed in this format. In this case, the images are in JPEG format and, through pillow, NumPy and OpenCV functions, the transformation is performed. The cv2 package (OpenCV) has the method imread() which is used to load the image and it also reads the given image (PIL image) in the NumPy array format. Because the images within the dataset (i.e., the NumPy arrays) must all be the same size to be used, and as a matter of efficiency and calculation power, using cv2s resize() the images are resized from 350x350 pixels into 100x100 (this dimension can be easily changed). The channel is three because the images are RGB. This method then returns a dataset containing the images in the format of NumPy arrays and their respective class labels.",
         "main-category": "Pre-processing",
         "objective": "data-transformation",
-        "datetime": "2023-08-05Z",
+        "datetime": "2023-08-05",
         "keywords": [
             "numpy array",
             "data transformation",
@@ -26,19 +26,13 @@
     "links": [
         {
             "rel": "root",
-            "href": "https://catalog.eoxhub.fairicube.eu/",
+            "href": "./catalog.json",
             "type": "application/json",
             "title": "Root"
         },
         {
             "rel": "parent",
-            "href": "https://catalog.eoxhub.fairicube.eu/collections/no-ML%20collection",
-            "type": "application/json",
-            "title": "no-ML collection"
-        },
-        {
-            "rel": "collection",
-            "href": "https://catalog.eoxhub.fairicube.eu/collections/no-ML%20collection",
+            "href": "./catalog.json",
             "type": "application/json",
             "title": "no-ML collection"
         },
