@@ -38,7 +38,7 @@ jobs:
           pip install -r ./ingestor/requirements.txt
       - name: generate stac items
         run: |
-          python3 ingestor/stac-generator.py
+          python3 /home/runner/work/resource-metadata/ingestor/stac-generator.py
           stac copy -t ABSOLUTE_PUBLISHED --publish-location "https://fairicube.github.io/resource-metadata/ml_items" stac/ml_items/stac_dist/catalog.json out/ml_items
           stac copy -t ABSOLUTE_PUBLISHED --publish-location "https://fairicube.github.io/resource-metadata/no-ml_items" stac/no-ml_items/stac_dist/catalog.json out/no-ml_items
       - name: Upload artifact
@@ -54,4 +54,4 @@ jobs:
           USERNAME: ${{ secrets.USERNAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
         run: |
-          python3 ingestor/update_items.py
+          python3 /home/runner/work/resource-metadata/ingestor/update_items.py
