@@ -38,8 +38,6 @@ jobs:
           pip install -r ./ingestor/requirements.txt
       - name: generate stac items
         run: |
-          ls
-          pwd
           python3 ./ingestor/generate_stac.py
           stac copy -t ABSOLUTE_PUBLISHED --publish-location "https://fairicube.github.io/resource-metadata/ml_items" stac/ml_items/stac_dist/catalog.json out/ml_items
           stac copy -t ABSOLUTE_PUBLISHED --publish-location "https://fairicube.github.io/resource-metadata/no-ml_items" stac/no-ml_items/stac_dist/catalog.json out/no-ml_items

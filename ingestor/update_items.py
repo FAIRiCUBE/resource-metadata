@@ -9,10 +9,10 @@ password = os.environ["PASSWORD"]
 urls = [
     {
         "catalog": "https://fairicube.github.io/resource-metadata/ml_items/catalog.json",
-        "api": "https://stacapi-write.eoxhub.fairicube.eu/ML%20collection/index/items"
+        "api": "https://stacapi-write.eoxhub.fairicube.eu/collections/ML collection/items"
     }, {
-        "catalog": "https://fairicube.github.io/resource-metadata/no- ml_items/catalog.json",
-        "api": "https://stacapi-write.eoxhub.fairicube.eu/no-ML%20collection/index/items"
+        "catalog": "https://fairicube.github.io/resource-metadata/no-ml_items/catalog.json",
+        "api": "https://stacapi-write.eoxhub.fairicube.eu/collections/no-ML collection/items"
     }
 ]
 
@@ -23,10 +23,12 @@ def cleanup_items(url, catalog_items_list):
 
     # check if the already ingested items are in the catalog,
     # otherwise delete them
-    for item in api_items["features"]:
-        if item["id"] not in catalog_items_list:
-            response = requests.delete(url=f"{url}/{item['id']}",
-                                       auth=HTTPBasicAuth(username, password))
+    if "features" in api_items.keys():
+        for item in api_items["features"]:
+            if item["id"] not in catalog_items_list:
+                response = requests.delete(
+                    url=f"{url}/{item['id']}",
+                    auth=HTTPBasicAuth(username, password))
     return response.status_code
 
 
