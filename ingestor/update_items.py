@@ -26,10 +26,10 @@ def cleanup_items(url, catalog_items_list):
     if "features" in api_items.keys():
         for item in api_items["features"]:
             if item["id"] not in catalog_items_list:
-                response = requests.delete(
+                requests.delete(
                     url=f"{url}/{item['id']}",
                     auth=HTTPBasicAuth(username, password))
-    return response.status_code
+    return
 
 
 def update_collection(catalog_url, post_url):
