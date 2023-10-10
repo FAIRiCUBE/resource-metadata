@@ -37,8 +37,6 @@ jobs:
         run: |
           pip install -r ./ingestor/requirements.txt
       - name: generate stac items
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 ./ingestor/stac-generator.py
           stac copy -t ABSOLUTE_PUBLISHED --publish-location "https://fairicube.github.io/resource-metadata/ml_items" stac/ml_items/stac_dist/catalog.json out/ml_items
