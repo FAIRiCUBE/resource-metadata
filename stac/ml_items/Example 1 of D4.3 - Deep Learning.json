@@ -37,7 +37,7 @@
         "title": "LeNet Classifier",
         "description": "Multi-layer Convolutional Neural Network for image classification",
         "main-category": "Deep Learning",
-        "datetime": "2023-04-04",
+        "datetime": "2023-04-04Z",
         "keywords": [
             "classification",
             "CNN",
