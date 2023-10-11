@@ -6,7 +6,33 @@
     ],
     "id": "lenet_classifier",
     "collection": "ML collection",
-    "geometry": null,
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180,
+              -90
+            ],
+            [
+              -180,
+              90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              180,
+              -90
+            ],
+            [
+              -180,
+              -90
+            ]
+          ]
+        ]
+      },
     "properties": {
         "title": "LeNet Classifier",
         "description": "Multi-layer Convolutional Neural Network for image classification",
