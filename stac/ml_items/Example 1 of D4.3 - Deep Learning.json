@@ -69,7 +69,6 @@
             "type": "application/json",
             "title": "ML collection"
         },
-        "ML collection",
         {
             "href": "https://en.wikipedia.org/wiki/LeNet",
             "rel": "about",
