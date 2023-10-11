@@ -61,7 +61,6 @@
             "type": "application/json",
             "title": "no-ML collection"
         },
-        "no-ML collection",
         {
             "href": "https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTE.html",
             "rel": "about",
