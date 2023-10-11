@@ -9,35 +9,35 @@
     "geometry": {
         "type": "Polygon",
         "coordinates": [
-          [
             [
-              -180,
-              -90
-            ],
-            [
-              -180,
-              90
-            ],
-            [
-              180,
-              90
-            ],
-            [
-              180,
-              -90
-            ],
-            [
-              -180,
-              -90
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
             ]
-          ]
         ]
-      },
+    },
     "properties": {
         "title": "LeNet Classifier",
         "description": "Multi-layer Convolutional Neural Network for image classification",
         "main-category": "Deep Learning",
-        "datetime": "2023-04-04",
+        "datetime": "2023-04-04Z",
         "keywords": [
             "classification",
             "CNN",
@@ -69,6 +69,7 @@
             "type": "application/json",
             "title": "ML collection"
         },
+        "ML collection",
         {
             "href": "https://en.wikipedia.org/wiki/LeNet",
             "rel": "about",
