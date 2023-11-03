@@ -1,0 +1,99 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "test",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "provider": "epsit",
+        "use-case": "common",
+        "title": "test",
+        "description": "test",
+        "main-category": "Ingestion",
+        "objective": "analytics",
+        "datetime": "2023-10-31",
+        "keywords": [
+            "test"
+        ],
+        "platform": "Google Colab",
+        "framework": "Scikit-Learn",
+        "algorithm": "Logistic-Regression",
+        "license": "CC-BY-4.0",
+        "processor-used": "gpu",
+        "operating-system-used": "win32",
+        "use-constraints": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        },
+        {
+            "href": "",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Reference link"
+        },
+        {
+            "href": "",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Example"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "test",
+            "type": "application/json",
+            "title": "Input data used",
+            "description": "test",
+            "biases-and-ethical-aspects": "test",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "test",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "test",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
