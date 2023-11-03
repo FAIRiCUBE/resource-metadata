@@ -1,0 +1,107 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/ml-model/v1.0.0/schema.json"
+    ],
+    "id": "a",
+    "collection": "ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "provider": "epsit",
+        "use-case": "UC3",
+        "title": "A",
+        "description": "a",
+        "main-category": "Machine Learning",
+        "datetime": "2023-11-02",
+        "keywords": [
+            "a"
+        ],
+        "platform": "Rasdaman",
+        "framework": "NumPy",
+        "algorithm": "Logistic-Regression",
+        "license": "CC-BY-4.0",
+        "ml-model:type": "ml-model",
+        "ml-model:learning_approach": "reinforcement-learning",
+        "ml-model:prediction_type": "clustering",
+        "ml-model:architecture": "Perceptron",
+        "ml-model:training-processor-type": "gpu",
+        "ml-model:training-os": "linux",
+        "use-constraints": "",
+        "model-configuration": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "ML collection"
+        },
+        {
+            "href": "",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Reference link"
+        },
+        {
+            "href": "",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Example"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "link",
+            "type": "application/json",
+            "title": "Input data used",
+            "description": "link",
+            "biases-and-ethical-aspects": "link",
+            "roles": [
+                "data"
+            ]
+        },
+        "model-checkpoint": {
+            "href": "link",
+            "type": "application/octet-stream",
+            "title": "Model",
+            "description": "link",
+            "performance": "",
+            "roles": [
+                "ml-model:checkpoint"
+            ]
+        }
+    }
+}
