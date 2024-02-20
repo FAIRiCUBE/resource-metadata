@@ -1,0 +1,99 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "testeaa",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "provider": "epsit",
+        "use-case": "common",
+        "title": "test",
+        "description": "test",
+        "main-category": "Analytics",
+        "objective": "analytics",
+        "datetime": "2024-02-01",
+        "keywords": [
+            "test11q"
+        ],
+        "platform": "Local Jupyter notebook",
+        "framework": "Pandas",
+        "algorithm": "custom-method",
+        "license": "GPL",
+        "processor-used": "cpu",
+        "operating-system-used": "linux",
+        "use-constraints": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        },
+        {
+            "href": "",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Reference link"
+        },
+        {
+            "href": "",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Example"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "testf",
+            "type": "application/json",
+            "title": "Input data used",
+            "description": "testf",
+            "biases-and-ethical-aspects": "testf",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "testf",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "testf",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
