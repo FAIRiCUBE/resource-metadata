@@ -1,0 +1,100 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "test",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "provider": "epsit",
+        "use-case": "common",
+        "title": "test",
+        "description": "test",
+        "main-category": "Analytics",
+        "objective": "analytics",
+        "datetime": "2024-02-20",
+        "keywords": [
+            "test1",
+            " test2"
+        ],
+        "platform": "Local Jupyter notebook",
+        "framework": "Pandas",
+        "algorithm": "custom-method",
+        "license": "MIT",
+        "processor-used": "cpu",
+        "operating-system-used": "linux",
+        "use-constraints": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        },
+        {
+            "href": "",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Reference link"
+        },
+        {
+            "href": "",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Example"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "www.google.com",
+            "type": "application/json",
+            "title": "Input data used",
+            "description": "www.google.com",
+            "biases-and-ethical-aspects": "good",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "www.google.com",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "www.google.com",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
