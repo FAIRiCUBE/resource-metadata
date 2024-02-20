@@ -45,7 +45,7 @@
         "platform": "Local Jupyter notebook",
         "framework": "Pandas",
         "algorithm": "custom-method",
-        "license": "MIT",
+        "license": "CC",
         "processor-used": "cpu",
         "operating-system-used": "linux",
         "use-constraints": ""
@@ -64,13 +64,13 @@
             "title": "no-ML collection"
         },
         {
-            "href": "",
+            "href": "https://www.test.com",
             "rel": "about",
             "type": "text/html",
             "title": "Reference link"
         },
         {
-            "href": "",
+            "href": "https://www.test.com",
             "rel": "about",
             "type": "text/html",
             "title": "Example"
