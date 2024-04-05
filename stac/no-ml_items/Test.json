@@ -1,0 +1,119 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "t",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "provider": "epsit",
+        "use-case": "common",
+        "title": "test",
+        "description": "test",
+        "main-category": "Analytics",
+        "objective": "analytics",
+        "datetime": "2024-04-04",
+        "keywords": [
+            "test1"
+        ],
+        "platform": "Local Jupyter notebook",
+        "framework": "NumPy",
+        "algorithm": "custom-method",
+        "license": "CC-BY-NC-4.0",
+        "processor-used": "cpu",
+        "operating-system-used": "linux",
+        "use-constraints": "no"
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        },
+        {
+            "href": "https://www.test.com",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Reference link"
+        },
+        {
+            "href": "https://www.test.com",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Example"
+        }
+    ],
+    "assets": {
+        "input-data-used-1": {
+            "href": "https://www.test.com\r\n",
+            "type": "application/json",
+            "title": "Input data used",
+            "description": "test1\r\n",
+            "biases-and-ethical-aspects": "test1\r\n",
+            "roles": [
+                "data"
+            ]
+        },
+        "input-data-used-2": {
+            "href": "https://www.test2.com\r\n",
+            "type": "application/json",
+            "title": "Input data used",
+            "description": "test2\r\n",
+            "biases-and-ethical-aspects": "No biases and ethical aspects",
+            "roles": [
+                "data"
+            ]
+        },
+        "input-data-used-3": {
+            "href": "https://www.test3.com",
+            "type": "application/json",
+            "title": "Input data used",
+            "description": "test3",
+            "biases-and-ethical-aspects": "test3",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "https://www.test.com",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "test",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
