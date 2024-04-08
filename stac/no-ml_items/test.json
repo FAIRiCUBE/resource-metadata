@@ -33,20 +33,20 @@
     "properties": {
         "provider": "epsit",
         "use-case": "common",
-        "title": "test1",
+        "title": "test",
         "description": "test",
         "main-category": "Analytics",
         "objective": "anomaly-detection",
-        "datetime": "2022-02-06",
+        "datetime": "2020-01-06",
         "keywords": [
             "test"
         ],
         "platform": "Local Jupyter notebook",
         "framework": "Rasdaman",
         "algorithm": "custom-method",
-        "license": "CC-BY-2.0",
+        "license": "AGPL-3.0",
         "processor-used": "cpu",
-        "operating-system-used": "linux",
+        "operating-system-used": "win32",
         "use-constraints": ""
     },
     "links": [
@@ -61,12 +61,6 @@
             "href": "./catalog.json",
             "type": "application/json",
             "title": "no-ML collection"
-        },
-        {
-            "href": "https://www.test.com",
-            "rel": "about",
-            "type": "text/html",
-            "title": "Example"
         }
     ],
     "assets": {
