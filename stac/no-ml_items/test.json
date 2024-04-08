@@ -1,7 +1,7 @@
 {
     "type": "Feature",
     "stac_version": "1.0.0",
-    "id": "test1",
+    "id": "test",
     "collection": "no-ML collection",
     "geometry": {
         "type": "Polygon",
@@ -36,17 +36,17 @@
         "title": "test",
         "description": "test",
         "main-category": "Analytics",
-        "objective": "clustering",
-        "datetime": "2023-01-01",
+        "objective": "anomaly-detection",
+        "datetime": "2002-01-01",
         "keywords": [
             "test"
         ],
         "platform": "Local Jupyter notebook",
-        "framework": "Scikit-Learn",
-        "algorithm": "Random-Forest-Classifier",
-        "license": "CC",
-        "processor-used": "cpu",
-        "operating-system-used": "cygwin",
+        "framework": "Keras",
+        "algorithm": "CNN - Convolutional-Neural-Network",
+        "license": "BIGSCIENCE-OPENRAIL-M",
+        "processor-used": "tpu",
+        "operating-system-used": "win32",
         "use-constraints": ""
     },
     "links": [
