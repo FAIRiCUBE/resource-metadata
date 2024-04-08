@@ -61,18 +61,6 @@
             "href": "./catalog.json",
             "type": "application/json",
             "title": "no-ML collection"
-        },
-        {
-            "href": "",
-            "rel": "about",
-            "type": "text/html",
-            "title": "Reference link"
-        },
-        {
-            "href": "",
-            "rel": "about",
-            "type": "text/html",
-            "title": "Example"
         }
     ],
     "assets": {
