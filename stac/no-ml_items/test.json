@@ -37,12 +37,12 @@
         "description": "test",
         "main-category": "Analytics",
         "objective": "anomaly-detection",
-        "datetime": "2023-04-07",
+        "datetime": "2021-04-06",
         "keywords": [
             "test"
         ],
-        "platform": "Google Colab",
-        "framework": "Keras",
+        "platform": "Local Jupyter notebook",
+        "framework": "NumPy",
         "algorithm": "custom-method",
         "license": "BSD",
         "processor-used": "cpu",
@@ -69,7 +69,7 @@
             "type": "application/json",
             "title": "Input data used",
             "description": "test",
-            "biases-and-ethical-aspects": "test",
+            "biases-and-ethical-aspects": "",
             "roles": [
                 "data"
             ]
