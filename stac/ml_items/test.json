@@ -4,7 +4,7 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/ml-model/v1.0.0/schema.json"
     ],
-    "id": "test",
+    "id": "29JX2V0R",
     "collection": "ML collection",
     "geometry": {
         "type": "Polygon",
@@ -39,7 +39,7 @@
         "title": "test",
         "description": "test",
         "main-category": "Machine Learning",
-        "datetime": "2020-03-05",
+        "datetime": "2024-04-09",
         "keywords": [
             "test",
             "jupyter_notebook_available"
@@ -50,7 +50,7 @@
         "license": "MIT",
         "ml-model:type": "ml-model",
         "ml-model:learning_approach": "supervised",
-        "ml-model:prediction_type": "regression",
+        "ml-model:prediction_type": "classification",
         "ml-model:architecture": "random-forest",
         "ml-model:training-processor-type": "cpu",
         "ml-model:training-os": "linux",
@@ -85,20 +85,20 @@
     ],
     "assets": {
         "input-data-used": {
-            "href": "test",
+            "href": "a",
             "type": "application/json",
             "title": "Input data used",
-            "description": "test",
-            "biases-and-ethical-aspects": "t",
+            "description": "a",
+            "biases-and-ethical-aspects": "a",
             "roles": [
                 "data"
             ]
         },
         "model-checkpoint": {
-            "href": "test",
+            "href": "a",
             "type": "application/octet-stream",
             "title": "Model",
-            "description": "test",
+            "description": "a",
             "performance": "test",
             "roles": [
                 "ml-model:checkpoint"
