@@ -1,0 +1,87 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "t",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "provider": "epsit",
+        "use-case": "common",
+        "title": "t",
+        "description": "t",
+        "main-category": "Analytics",
+        "objective": "anomaly-detection",
+        "datetime": "2021-03-08",
+        "keywords": [
+            "t"
+        ],
+        "platform": "Local Jupyter notebook",
+        "framework": "NumPy",
+        "algorithm": "Naive-Bayes",
+        "license": "CC",
+        "processor-used": "cpu",
+        "operating-system-used": "linux",
+        "use-constraints": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "t",
+            "type": "application/json",
+            "title": "Input data used",
+            "description": "t",
+            "biases-and-ethical-aspects": "t",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "t",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "t",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
