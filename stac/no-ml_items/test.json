@@ -1,0 +1,100 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "test",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "provider": "epsit",
+        "use-case": "common",
+        "title": "test",
+        "description": "test",
+        "main-category": "Analytics",
+        "objective": "anomaly-detection",
+        "datetime": "2024-04-04",
+        "keywords": [
+            "test",
+            "jupyter_notebook_available"
+        ],
+        "platform": "EOX",
+        "framework": "Rasdaman",
+        "algorithm": "custom-method",
+        "license": "CC",
+        "processor-used": "cpu",
+        "operating-system-used": "linux",
+        "use-constraints": "test"
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        },
+        {
+            "href": "https://www.test.com",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Reference link"
+        },
+        {
+            "href": "https://www.test.com",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Example"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "test",
+            "type": "application/json",
+            "title": "Input data used",
+            "description": "test",
+            "biases-and-ethical-aspects": "test",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "test",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "test",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
