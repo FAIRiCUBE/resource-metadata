@@ -44,7 +44,7 @@
             "test",
             "jupyter_notebook_available"
         ],
-        "platform": "Google Colab",
+        "platform": "Local Jupyter notebook",
         "framework": "TensorFlow",
         "algorithm": "Random-Forest-Classifier",
         "license": "MIT",
