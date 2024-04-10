@@ -44,7 +44,7 @@
             "test",
             "jupyter_notebook_available"
         ],
-        "platform": "Rasdaman",
+        "platform": "Google Colab",
         "framework": "TensorFlow",
         "algorithm": "Random-Forest-Classifier",
         "license": "MIT",
