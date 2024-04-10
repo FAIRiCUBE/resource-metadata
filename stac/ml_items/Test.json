@@ -44,8 +44,8 @@
             "test",
             "jupyter_notebook_available"
         ],
-        "platform": "EOX",
-        "framework": "PyTorch",
+        "platform": "Amazon AWS",
+        "framework": "TensorFlow",
         "algorithm": "Random-Forest-Classifier",
         "license": "MIT",
         "ml-model:type": "ml-model",
