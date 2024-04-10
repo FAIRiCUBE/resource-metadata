@@ -52,7 +52,7 @@
         "ml-model:prediction_type": "clustering",
         "ml-model:architecture": "decision-tree",
         "ml-model:training-processor-type": "gpu",
-        "ml-model:training-os": "win32",
+        "ml-model:training-os": "aix",
         "use-constraints": "",
         "model-configuration": ""
     },
