@@ -1,0 +1,95 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "26YU5NATNB",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "provider": "s4e",
+        "use-case": "common",
+        "title": "tiff to tiled cloud optimized geotiff",
+        "description": "gdal utility to convert a geotiff file to a tiled cloud optimized geotiff file",
+        "main-category": "Pre-processing",
+        "objective": "data-transformation",
+        "datetime": "2024-04-11",
+        "keywords": [
+            "preprocessing",
+            " format transformation",
+            " cloud-optimized"
+        ],
+        "platform": "EOX",
+        "framework": "NumPy",
+        "algorithm": "custom-method",
+        "license": "MIT",
+        "processor-used": "cpu",
+        "operating-system-used": "windows",
+        "use-constraints": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        },
+        {
+            "href": "https://github.com/FAIRiCUBE/common-code/blob/main/fromTIFF_to_COG/gdal_tiff_to_tiled_cog.md",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Reference link"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "https://sdi.eea.europa.eu/catalogue/copernicus/api/records/c7bf34ea-755c-4dbd-85b6-4efc5fd302a2?language=all",
+            "type": "application/json",
+            "title": "Input data used",
+            "description": "dataset in tiff format",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "ingested data on SentinelHub",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "tiled cog",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
