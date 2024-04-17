@@ -1,5 +1,7 @@
 # resource_metadata
-The purpose of this repository is to collect information for processing/analysis resources. 
-Information can be provided opening issues in the [issue tracker](https://github.com/FAIRiCUBE/resource-metadata/issues).
+The purpose of this repository is to collect metadata information for the processing/analysis (a/p) resources of the project. 
 
-In particular, the MD information requirements will be collected using the Resource Metadata Request issue template, while code list management proposals will be collected using the Codelist change proposal template
+To create the metadata file for a new a/p resource as well as to update an existing one use the dedicated [web application](https://fairicube-md.dev.epsilon-italia.it/).
+
+To propose updates to codelists, use the [Codelist change proposal template](https://github.com/FAIRiCUBE/resource-metadata/issues/new?assignees=&labels=&projects=&template=codelist_change_proposal.yml).
+
