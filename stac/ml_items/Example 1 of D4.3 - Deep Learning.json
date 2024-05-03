@@ -33,6 +33,7 @@
             ]
         ]
     },
+    "bbox":[-180, -90, 180, 90],
     "properties": {
         "provider": "epsit",
         "use-case": "common",
