@@ -73,7 +73,7 @@
     "assets": {
         "input-data-used": {
             "href": "https://open.canada.ca/data/en/dataset/9d8f219c-4df0-4481-926f-8a2a532ca003",
-            "type": "application/json",
+            "type": "data",
             "title": "Input data used",
             "description": "Refer to Canadas website for the original wildfires data. The dataset is composed by satellite images (shape is 350x350).",
             "biases-and-ethical-aspects": "",
