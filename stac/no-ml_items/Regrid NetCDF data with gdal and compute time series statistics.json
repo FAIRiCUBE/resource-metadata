@@ -1,0 +1,101 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "APY6N8O7V6",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "s4e",
+        "use-case": "UC1",
+        "title": "regrid-netcdf-compute-ts-stats",
+        "description": "This resource (Jupyter Notebook) shows how to regrid data in NetCDF format using gdal and rasterio; convert data to zarr format; compute time series trends and other statistics. The input data is downloaded via REST API from Geosphere Austria Data Hub.",
+        "main-category": "Pre-processing",
+        "objective": "data-transformation",
+        "datetime": "2024-05-29",
+        "keywords": [
+            "regridding",
+            " time-series analysis",
+            "jupyter_notebook_available"
+        ],
+        "platform": "Local Jupyter notebook",
+        "framework": "gdal",
+        "algorithm": "custom-method",
+        "license": "MIT",
+        "processor-used": "cpu",
+        "operating-system-used": "windows",
+        "use-constraints": "Requirements to run the notebook:\r\n- gdal\r\n- Python libraries: requests, xarray, os, pandas, rasterio, pymannkendall"
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        },
+        {
+            "href": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/notebooks/dev/f04_climate_data/Vienna_interpolate_climate_data.ipynb",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Implementation example"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "https://data.hub.geosphere.at/dataset/spartacus-v2-1d-1km",
+            "type": "application/json",
+            "title": "Input data used",
+            "description": "daily 1km gridded data (min., max. temperature, precipitation sum, sunshine duration) in EPSG:3416, NetCDF format",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "output data stored in faircube common s3 bucket: yearly average\r\nhttps://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/SA_yearly_avg_2020-2024_epsg31256_100m_regridded.zarr\r\nhttps://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/RR_yearly_avg_2020-2024_epsg31256_100m_regridded.zarr\r\nhttps://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/TN_yearly_avg_2020-2024_epsg31256_100m_regridded.zarr\r\nhttps://fairicube.s3.eu-central-1.amazonaws.com/vienna_data/100m/TX_yearly_avg_2020-2024_epsg31256_100m_regridded.zarr\r\n",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "yearly average computed from daily time series, regridded to EPSG:31256 and upsampled to 100m with bilinear interpolation\r\n",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
