@@ -4,7 +4,7 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/ml-model/v1.0.0/schema.json"
     ],
-    "id": "https://doi.org/10.5281/zenodo.11447418",
+    "id": "lenet_classifier",
     "collection": "ML collection",
     "geometry": {
         "type": "Polygon",
