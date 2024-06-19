@@ -38,7 +38,7 @@
         "provider": "epsit",
         "use-case": "common",
         "title": "LeNet Classifier",
-        "description": "Multi-layer Convolutional Neural Network for image classification",
+        "description": "Multi-layer Convolutional Neural Network for image classification ",
         "main-category": "Deep Learning",
         "datetime": "2023-04-04",
         "keywords": [
