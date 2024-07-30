@@ -71,7 +71,7 @@ NB: Each column corresponds to a codelist. The column header (in *italics*) is t
 
 
 ## Dataset metadata codelists
-NB: Each column corresponds to a codelist. The column header (in *italics*) is the codelist name. For each codelist there are two fields on two different lines: the value and link to its definition.
+NB: Each column corresponds to a codelist. The column header (in *italics*) is the codelist name. For each codelist there are three fields on three different lines: the value, the definition and the link to a source providing more information.
 
 
 || *ObservableProperties* |
