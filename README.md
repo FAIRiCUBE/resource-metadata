@@ -77,4 +77,5 @@ NB: Each column corresponds to a codelist. The column header (in *italics*) is t
 || *ObservableProperties* |
 |---|---|
 | *Value* | Water and Wetness |
-| *Link* | [Water and Wetness link](https://land.copernicus.eu/en/technical-library/hrl-water-wetness-2018-user-manual/@@download/file) |
+| *Definition* | The HRL Water and Wetness 2018 provides primary products in full spatial resolution of 10m x 10m (as compared to 20m x 20m resolution in 2015). The main product is a classified layer, differentiating the classes of permanent water, temporary water, permanent wet, temporary wet, and dry areas, derived from water and wetness occurrences in the period 2012-2018. |
+| *Source Link* | [Water and Wetness source link](https://land.copernicus.eu/en/technical-library/hrl-water-wetness-2018-user-manual/@@download/file) |
