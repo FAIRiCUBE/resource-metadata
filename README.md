@@ -1,5 +1,6 @@
 # Resource Metadata
-The purpose of this repository is to collect metadata information for the processing/analysis (a/p) resources of the project. 
+The purpose of this repository is to govern the creation and maintenance of metadata of processing/analysis (a/p) resources. 
+Aspects related to the governance of codelists apply also to datasets metadata. 
 
 To create the metadata file for a new a/p resource as well as to update an existing one use the dedicated [web application](https://fairicube-md.dev.epsilon-italia.it/). 
 
@@ -9,7 +10,7 @@ To ensure semantic harmonisation, some metadata elements are valorised by select
 
 
 ## Analysis and processing resources metadata codelists
-NB: Each column corresponds to a codelist. The first value (in *italics*) is the codelist name.
+NB: Each column corresponds to a codelist. The column header (in *italics*) is the codelist name.
 
 | *Main category* | *Objective* | *Platform* | *Framework* | *Architecture* | *Approach* | *Algorithm* | *Processor* | *OS* | *Use case* | *Conditions for access and use* |
 |:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|
@@ -70,7 +71,7 @@ NB: Each column corresponds to a codelist. The first value (in *italics*) is the
 
 
 ## Dataset metadata codelists
-NB: Each column corresponds to a codelist. The column header (in *italics*) is the codelist name.. For each codelist there are two fields on two different lines: the value and link to its definition.
+NB: Each column corresponds to a codelist. The column header (in *italics*) is the codelist name. For each codelist there are two fields on two different lines: the value and link to its definition.
 
 
 || *ObservableProperties* |
