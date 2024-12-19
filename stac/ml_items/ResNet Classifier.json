@@ -56,7 +56,7 @@
         "framework": "Keras",
         "algorithm": "ResNet",
         "license": "MIT",
-        "validation": "https://www.test.com",
+        "validation": "",
         "ml-model:type": "ml-model",
         "ml-model:learning_approach": "supervised",
         "ml-model:prediction_type": "classification",
