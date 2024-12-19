@@ -45,7 +45,7 @@
         "title": "ResNet Classifier",
         "description": "ResNet is an artificial neural network that introduced a so-called \"identity shortcut connection\" which allows the model to skip one or more layers. This approach makes it possible to train the network on thousands of layers without affecting performance. It\u2019s become one of the most popular architectures for various computer vision tasks.\r\n",
         "main-category": "Deep Learning",
-        "datetime": "2024-07-09",
+        "datetime": "2024-12-19",
         "keywords": [
             "ResNet",
             " Residual Network",
@@ -56,6 +56,7 @@
         "framework": "Keras",
         "algorithm": "ResNet",
         "license": "MIT",
+        "validation": "https://www.test.com",
         "ml-model:type": "ml-model",
         "ml-model:learning_approach": "supervised",
         "ml-model:prediction_type": "classification",
