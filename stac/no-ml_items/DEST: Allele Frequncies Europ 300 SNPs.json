@@ -1,0 +1,98 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "BUD2NGEV4X",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "sonjastndl",
+        "use-case": "UC3",
+        "title": "Europe300SNPs",
+        "description": "This is a small allele frequency dataset of European Drosphila populations for 300 SNPs.",
+        "main-category": "Ingestion",
+        "objective": "dataset-balancing",
+        "datetime": "2024-08-24",
+        "keywords": [
+            "DEST",
+            " Allele",
+            " Frequency",
+            " Drosophila",
+            " SNPs"
+        ],
+        "platform": "EOX",
+        "framework": "no-framework",
+        "algorithm": "custom-method",
+        "validation": "",
+        "license": "MIT",
+        "processor-used": "cpu",
+        "operating-system-used": "linux",
+        "use-constraints": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "https://dest.bio/data-files/SNP-tables",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "VCF files (variant call format) were used:  https://en.wikipedia.org/wiki/Variant_Call_Format",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "https://eoxhub.fairicube.eu/user/sonjastndl/lab/tree/s3/results/fullgenome_test/Subsample_Europe_300_AF.af",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "Allele frequency (AF) file derived from a Variant Call Format (VCF) file is a text-based representation of the frequency of specific alleles at various genomic loci across a population or set of samples.\r\n\r\nColumns/Fields:\r\nCHROM: The chromosome on which the variant is located.\r\nPOS: The position of the variant on the chromosome.\r\nAF x number of Populations\r\nAF: The allele frequency of the alternative allele in the population or cohort (ranging from 0 to 1). This represents the proportion of chromosomes carrying the alternative allele.",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
