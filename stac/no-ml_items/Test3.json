@@ -1,0 +1,100 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "WNBP1DMM99",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "cozzolinoac11",
+        "use-case": "common",
+        "title": "test3",
+        "description": "test3",
+        "main-category": "Analytics",
+        "objective": "regression",
+        "datetime": "2025-03-01",
+        "keywords": [
+            "test"
+        ],
+        "platform": "Google Colab",
+        "framework": "Rasdaman",
+        "algorithm": "Naive-Bayes",
+        "validation": "",
+        "license": "GFDL",
+        "processor-used": "cpu",
+        "operating-system-used": "aix",
+        "use-constraints": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        },
+        {
+            "href": "https://test",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Reference link"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "test",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "test",
+            "biases-and-ethical-aspects": "test",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "test",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "test",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
