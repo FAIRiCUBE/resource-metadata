@@ -47,7 +47,7 @@
         "keywords": [
             "test"
         ],
-        "platform": "Google Colab",
+        "platform": "EOX",
         "framework": "Rasdaman",
         "algorithm": "Naive-Bayes",
         "validation": "",
