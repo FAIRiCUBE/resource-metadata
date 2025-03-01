@@ -1,0 +1,114 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/ml-model/v1.0.0/schema.json"
+    ],
+    "id": "Y9GO0RMIG3",
+    "collection": "ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "cozzolinoac11",
+        "use-case": "common",
+        "title": "test",
+        "description": "test",
+        "main-category": "Machine Learning",
+        "datetime": "2025-03-01",
+        "keywords": [
+            "test"
+        ],
+        "platform": "EOX",
+        "framework": "no-framework",
+        "algorithm": "Naive-Bayes",
+        "license": "MIT",
+        "validation": "",
+        "ml-model:type": "ml-model",
+        "ml-model:learning_approach": "supervised",
+        "ml-model:prediction_type": "object-detection",
+        "ml-model:architecture": "Gaussian-Mixture",
+        "ml-model:training-processor-type": "cpu",
+        "ml-model:training-os": "linux",
+        "use-constraints": "",
+        "model-configuration": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "ML collection"
+        },
+        {
+            "href": "https://test",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Reference link"
+        },
+        {
+            "href": "https://test",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Implementation example"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "test",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "test",
+            "biases-and-ethical-aspects": "test",
+            "roles": [
+                "data"
+            ]
+        },
+        "model-checkpoint": {
+            "href": "test",
+            "type": "application/octet-stream",
+            "title": "Model",
+            "description": "test",
+            "performance": "test",
+            "roles": [
+                "ml-model:checkpoint"
+            ]
+        }
+    }
+}
