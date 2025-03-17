@@ -1,0 +1,116 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "LLY55L39B7",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "mari-s4e",
+        "use-case": "UC1",
+        "title": "MaxEnt_model_SHAP",
+        "description": "Compute suitability index for a plant species based on environmental variables. Inputs are species occurrences (coordinates in the given CRS) and environmental variables (GeoTiff, gridded data). The a/p resource uses the species distribution model MaxEnt, elapid implementation (https://earth-chris.github.io/elapid/). Further, the a/p resource selects n samples from the area of interests and runs SHAP analysis to determine which env. variable has the most influence(https://shap.readthedocs.io/en/latest/example_notebooks/overviews/An%20introduction%20to%20explainable%20AI%20with%20Shapley%20values.html).",
+        "main-category": "Analytics",
+        "objective": "analytics",
+        "datetime": "2025-03-17",
+        "keywords": [
+            "sdm",
+            " species distribution modeling",
+            " maxent",
+            " shap",
+            " explainable ai",
+            " invasive species",
+            " occurrence cube"
+        ],
+        "platform": "EOX",
+        "framework": "Pandas",
+        "algorithm": "custom-method",
+        "validation": "",
+        "license": "MIT",
+        "processor-used": "cpu",
+        "operating-system-used": "linux",
+        "use-constraints": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        },
+        {
+            "href": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/processing/sdm/MaxentModel-Final.py",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Reference link"
+        }
+    ],
+    "assets": {
+        "input-data-used-1": {
+            "href": "not yet published\r\n",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "occurrence cube\r\n",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "input-data-used-2": {
+            "href": "not yet published",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "environmental gridded variables",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "not yet published\r\n",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "suitability map\r\n",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
