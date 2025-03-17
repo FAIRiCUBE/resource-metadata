@@ -2,9 +2,9 @@
 The purpose of this repository is to govern the creation and maintenance of metadata of processing/analysis (a/p) resources. 
 Aspects related to the governance of codelists apply also to datasets metadata. 
 
-To create the metadata file for a new a/p resource as well as to update an existing one use the dedicated [web application](https://fairicube-md.dev.epsilon-italia.it/). 
+To create the metadata file for a new a/p resource as well as to update an existing one use the dedicated [web application](https://fairicube-md.epsilon-italia.it/). 
 
-The created metadata file will automatically be published in the [FAIRiCUBE Catalogue](https://catalog.eoxhub.fairicube.eu/?.language=en) and will be queryable through [Knowledge Base Query Tool](https://fairicube-kb.dev.epsilon-italia.it/query-tool).
+The created metadata file will automatically be published in the [FAIRiCUBE Catalogue](https://catalog.eoxhub.fairicube.eu/?.language=en) and will be queryable through [Knowledge Base Query Tool](https://fairicube-kb.epsilon-italia.it/).
 
 To ensure semantic harmonisation, some metadata elements are valorised by selecting values from corresponding codelists. Use the [Codelist change proposal template](https://github.com/FAIRiCUBE/resource-metadata/issues/new?assignees=&labels=&projects=&template=codelist_change_proposal.yml) for proposing updates to current codelists. 
 
