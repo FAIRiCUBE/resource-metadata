@@ -1,0 +1,120 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/ml-model/v1.0.0/schema.json"
+    ],
+    "id": "NP92Z39B4F",
+    "collection": "ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "mari-s4e",
+        "use-case": "UC1",
+        "title": "GradientBoostingRegressor",
+        "description": "This scripts predicts missing data in using scikit-learn GradientBoostingRegressor",
+        "main-category": "Machine Learning",
+        "datetime": "2025-03-18",
+        "keywords": [
+            "scikit-learn",
+            " gradient boosting",
+            " gap-filling"
+        ],
+        "platform": "EOX",
+        "framework": "Scikit-Learn",
+        "algorithm": "custom-method",
+        "license": "MIT",
+        "validation": "",
+        "ml-model:type": "ml-model",
+        "ml-model:learning_approach": "supervised",
+        "ml-model:prediction_type": "gap-filling",
+        "ml-model:architecture": "gradient-based",
+        "ml-model:training-processor-type": "cpu",
+        "ml-model:training-os": "linux",
+        "use-constraints": "",
+        "model-configuration": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "ML collection"
+        },
+        {
+            "href": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/processing/gap_filling/Regression_EN1002V.py",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Implementation example"
+        }
+    ],
+    "assets": {
+        "input-data-used-1": {
+            "href": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/processing/gap_filling/SelectedData_EN1002V.csv\r\n",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "training data\r\n",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "input-data-used-2": {
+            "href": "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/processing/gap_filling/X_missing_EN1002V.csv",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "test data",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "model-checkpoint": {
+            "href": "todo",
+            "type": "application/octet-stream",
+            "title": "Model",
+            "description": "todo",
+            "performance": "scikit-learn GradientBoostingRegressor, n_estimators=125, random_state=42\r\nMetrics: mean squared error, R2 score",
+            "roles": [
+                "ml-model:checkpoint"
+            ]
+        }
+    }
+}
