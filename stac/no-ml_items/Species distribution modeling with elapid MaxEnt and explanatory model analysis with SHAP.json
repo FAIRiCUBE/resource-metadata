@@ -40,10 +40,10 @@
         "provider": "mari-s4e",
         "use-case": "UC1",
         "title": "MaxEnt_model_SHAP",
-        "description": "Compute suitability index for a plant species based on environmental variables. Inputs are species occurrences (coordinates in the given CRS) and environmental variables (GeoTiff, gridded data). The a/p resource uses the species distribution model MaxEnt, elapid implementation (https://earth-chris.github.io/elapid/). Further, the a/p resource selects n samples from the area of interests and runs SHAP analysis to determine which env. variable has the most influence(https://shap.readthedocs.io/en/latest/example_notebooks/overviews/An%20introduction%20to%20explainable%20AI%20with%20Shapley%20values.html).",
+        "description": "Compute suitability index for a plant species based on environmental variables. Inputs are species occurrences (coordinates in the given CRS) and environmental variables (GeoTiff, gridded data). The a/p resource uses the species distribution model MaxEnt, elapid implementation (https://earth-chris.github.io/elapid/). Further, the a/p resource selects n samples from the area of interests and runs SHAP analysis to determine which env. variable has the most influence (https://shap.readthedocs.io/en/latest/example_notebooks/overviews/An%20introduction%20to%20explainable%20AI%20with%20Shapley%20values.html).",
         "main-category": "Analytics",
         "objective": "analytics",
-        "datetime": "2025-03-17",
+        "datetime": "2025-03-18",
         "keywords": [
             "sdm",
             " species distribution modeling",
