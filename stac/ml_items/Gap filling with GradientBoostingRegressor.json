@@ -4,7 +4,7 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/ml-model/v1.0.0/schema.json"
     ],
-    "id": "NP92Z39B4F",
+    "id": "Y3ATUXFC28",
     "collection": "ML collection",
     "geometry": {
         "type": "Polygon",
