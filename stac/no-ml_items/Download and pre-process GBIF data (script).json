@@ -1,0 +1,169 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "WUBRC1AZ3B",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "susannaioni",
+        "use-case": "UC5",
+        "title": "GBIF_data",
+        "description": "Script built to download and pre-process GBIF occurrence data of the diagnostic species of the EUNIS Habitat S22",
+        "main-category": "Pre-processing",
+        "objective": "outliers-removing",
+        "datetime": "2025-03-27",
+        "keywords": [
+            "GBIF",
+            " occurrence-data",
+            " download-data",
+            " pre-processing",
+            " cleaning-data",
+            "jupyter_notebook_available"
+        ],
+        "platform": "EOX",
+        "framework": "no-framework",
+        "algorithm": "custom-method",
+        "validation": "",
+        "license": "CC-BY-NC-4.0",
+        "processor-used": "cpu",
+        "operating-system-used": "windows",
+        "use-constraints": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        }
+    ],
+    "assets": {
+        "input-data-used-1": {
+            "href": "https://doi.org/10.15468/dl.pcb2f5\r\n",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "Occurrence data for Dryas octopetala and its taxonomical synonyms, downloaded from GBIF, using the R script \r\n",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "input-data-used-2": {
+            "href": "https://doi.org/10.15468/dl.fjpt7s\r\n",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "Occurrence data for Helictochloa versicolor and its taxonomical synonyms, downloaded from GBIF, using the R script \r\n",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "input-data-used-3": {
+            "href": "https://doi.org/10.15468/dl.et8s3p\r\n",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "Occurrence data for Hieracium alpinum and its taxonomical synonyms, downloaded from GBIF, using the R script\r\n",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "input-data-used-4": {
+            "href": "https://doi.org/10.15468/dl.77nej7\r\n",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "Occurrence data for Homogyne alpina and its taxonomical synonyms, downloaded from GBIF, using the R script\r\n",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "input-data-used-5": {
+            "href": "https://doi.org/10.15468/dl.f2uzb6\r\n",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "Occurrence data for  and its taxonomical synonyms, downloaded from GBIF, using the R script\r\n",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "input-data-used-6": {
+            "href": "https://doi.org/10.15468/dl.4xqbxx\r\n",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "Occurrence data for Rhododendron ferrugineum and its taxonomical synonyms, downloaded from GBIF, using the R script\r\n",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "input-data-used-7": {
+            "href": "https://doi.org/10.15468/dl.9f2jeu\r\n",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "Occurrence data for Scorzoneroides helvetica and its taxonomical synonyms, downloaded from GBIF, using the R script\r\n",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "input-data-used-8": {
+            "href": "https://doi.org/10.15468/dl.4cdnm2 \r\n\r\n",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "Occurrence data for Vaccinium uliginosum and its taxonomical synonyms, downloaded from GBIF, using the R script\r\n",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "https://github.com/FAIRiCUBE/uc5-occurence-cubes/blob/main/S22_occur_sSpec.csv\r\n",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "Complete csv with cleaned and processed occurrence data of the habitat S22, downloaded from GBIF",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
