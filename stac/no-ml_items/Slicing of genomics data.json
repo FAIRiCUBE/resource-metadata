@@ -1,0 +1,99 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "0BCEY5MNAO",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "jetschny",
+        "use-case": "UC3",
+        "title": "pre-processing",
+        "description": "pre-processing python script to slice through a large genomics data set to separate/filter according certain criteria ",
+        "main-category": "Pre-processing",
+        "objective": "gap-filling",
+        "datetime": "2025-04-03",
+        "keywords": [
+            "pre processing",
+            " gap gilling",
+            " filtering",
+            " slicing",
+            " genomics data",
+            "jupyter_notebook_available"
+        ],
+        "platform": "Local Jupyter notebook",
+        "framework": "NumPy",
+        "algorithm": "custom-method",
+        "validation": "",
+        "license": "MIT",
+        "processor-used": "cpu",
+        "operating-system-used": "linux",
+        "use-constraints": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "https://github.com/FAIRiCUBE/uc3-drosophola-genetics/tree/main/projects/gap_filling/makeWindows/data",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "https://github.com/FAIRiCUBE/uc3-drosophola-genetics/tree/main/projects/gap_filling/makeWindows/data",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "https://github.com/FAIRiCUBE/uc3-drosophola-genetics/tree/main/projects/gap_filling/makeWindows/data",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "https://github.com/FAIRiCUBE/uc3-drosophola-genetics/tree/main/projects/gap_filling/makeWindows/data",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
