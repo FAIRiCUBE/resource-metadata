@@ -1,0 +1,104 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "9WE9446X81",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "sonjastndl",
+        "use-case": "UC3",
+        "title": "Selected Point Data Europe For Drosophila",
+        "description": "Selected Environmental Data of European Drosophila Samples, of more than150 Rasdaman alyers, 19 BioVariables from WorldClim and ERA5 data from Copernicus. ",
+        "main-category": "Pre-processing",
+        "objective": "feature-selection",
+        "datetime": "2025-05-12",
+        "keywords": [
+            "Environmental Data",
+            " Drosophila",
+            " Point Cooridnates",
+            " Point Estimates",
+            " WCPS"
+        ],
+        "platform": "Rasdaman",
+        "framework": "no-framework",
+        "algorithm": "WCPS",
+        "validation": "",
+        "license": "CC-BY-NC-SA-4.0",
+        "processor-used": "cpu",
+        "operating-system-used": "linux",
+        "use-constraints": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        },
+        {
+            "href": "https://github.com/sonjastndl/EAA/blob/main/data/environmental/fairicube/Env_imputed.csv",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Reference link"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "https://github.com/FAIRiCUBE/uc3-drosophola-genetics/blob/main/projects/LandscapeGenomicsPipeline/data/sample_lists/samps_25Feb2023.csv\r\nhttps://catalog.eoxhub.fairicube.eu/collections/no-ML%20collection/items/1M5R0VZE4J?.language=de&.asset=asset-input-data-used",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "This csv carries information on the samples were environmental data was downloaded for.\r\nIt was then processed with the EAA \u00dcieline to remove and impute missing data. \r\n",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "https://github.com/sonjastndl/EAA/blob/main/data/environmental/fairicube/Env_imputed.csv",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "A csv, carring information for sampleID, lat, long and each requested layer in a column. Point values only.\r\n",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
