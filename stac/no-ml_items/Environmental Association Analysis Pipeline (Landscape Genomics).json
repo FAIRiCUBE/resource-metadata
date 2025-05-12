@@ -1,0 +1,106 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "1M5R0VZE4J",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "sonjastndl",
+        "use-case": "UC3",
+        "title": "EAA Pipeline",
+        "description": "Documentation on the Environmental Association Analysis Workflow conducted in the scope of the UC3 Project of FAIRiCUBE. The Use Case approach aims to identify how environmental factors shape genetic variation and influence evolutionary processes in european popualtions of Drosophila melanogaster. By correlating population genomics with environmental data, the study aims to uncover genetic targets affected by environmental selection pressures. ",
+        "main-category": "Analytics",
+        "objective": "analytics",
+        "datetime": "2025-05-12",
+        "keywords": [
+            "EAA",
+            " Landscape Genomics",
+            " Drosophila",
+            " Workflow",
+            " Analysis-Workflow",
+            " Analysis",
+            " Association Analysis"
+        ],
+        "platform": "EOX",
+        "framework": "no-framework",
+        "algorithm": "Logistic-Regression",
+        "validation": "",
+        "license": "MIT",
+        "processor-used": "cpu",
+        "operating-system-used": "linux",
+        "use-constraints": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        },
+        {
+            "href": "https://github.com/sonjastndl/EAA",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Reference link"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "https://dest.bio/data-files/SNP-tables\r\nhttps://github.com/sonjastndl/EAA/blob/main/data/environmental/fairicube/Env_imputed.csv",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "Samples for Coorindates: A csv file carrying information on sampleId, lat, long and date.\r\nGenetic Data: Population Allele Frequencies\r\nEnvironmental Data: A .csv file that is comprised of the grid cell data for each desired layer (columns) for all the geo referenced samples (rows).",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "https://github.com/sonjastndl/EAA/blob/main/results/RDA/ordiR2step/best_variables.csv ",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "A csv file, caryying a list of the selected variables (of input) that do describe best the complex relationship with the input genetic data. Further processing and interpretation is possible. ",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
