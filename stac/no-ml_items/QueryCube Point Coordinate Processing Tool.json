@@ -1,0 +1,107 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "H6OSUK7TD8",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "sonjastndl",
+        "use-case": "UC3",
+        "title": "QueryCube",
+        "description": "ownload environmental data from the Rasdaman GmbH database for predefined point coordinates for a specific date if available.Mainly designed to assist download of rasterized data for scientific use. It was developed for the UC3 Project of FAIRiCUBE. Currently the OGC Service used is provided by rasdaman (https://ows.rasdaman.org/rasdaman/ows#/services).",
+        "main-category": "Pre-processing",
+        "objective": "classification",
+        "datetime": "2025-05-12",
+        "keywords": [
+            "Data",
+            " Download",
+            " Environmental Data",
+            " WCPS",
+            " Query",
+            " Rasdaman",
+            " QueryCube",
+            " Wormpicker"
+        ],
+        "platform": "Rasdaman",
+        "framework": "no-framework",
+        "algorithm": "WCPS",
+        "validation": "",
+        "license": "CC-BY-NC-SA-4.0",
+        "processor-used": "cpu",
+        "operating-system-used": "linux",
+        "use-constraints": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        },
+        {
+            "href": "https://github.com/FAIRiCUBE/uc3-drosophola-genetics/tree/main/projects/QueryCube",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Reference link"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "https://github.com/FAIRiCUBE/uc3-drosophola-genetics/blob/main/projects/LandscapeGenomicsPipeline/data/sample_lists/samps_25Feb2023.csv",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "- It must be a csv file\r\n- The file must include the headers sampleid, lat, long\r\n- The header date is optional",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "https://github.com/FAIRiCUBE/uc3-drosophola-genetics/blob/main/projects/QueryCube/example_use/example_results/WormpickerResult.csv\r\nhttps://github.com/sonjastndl/EAA/blob/main/data/environmental/fairicube/Env_imputed.csv \r\n",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "A .csv file, that is comprised of the grid cell data for each desired layer (columns) for all the geo referenced samples (rows).",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
