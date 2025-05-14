@@ -1,0 +1,114 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/ml-model/v1.0.0/schema.json"
+    ],
+    "id": "RPNGH2B5U0",
+    "collection": "ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "jetschny",
+        "use-case": "UC3",
+        "title": "Apply elbow method and k-means clustering to gap fill genomics data",
+        "description": "Apply elbow method and k-means clustering to gap fill genomics data",
+        "main-category": "Machine Learning",
+        "datetime": "2025-05-14",
+        "keywords": [
+            "elbow method k-means kmeans clustering gap filling"
+        ],
+        "platform": "EOX",
+        "framework": "Scikit-Learn",
+        "algorithm": "K-means",
+        "license": "MIT",
+        "validation": "",
+        "ml-model:type": "ml-model",
+        "ml-model:learning_approach": "supervised",
+        "ml-model:prediction_type": "clustering",
+        "ml-model:architecture": "datacubes",
+        "ml-model:training-processor-type": "cpu",
+        "ml-model:training-os": "linux",
+        "use-constraints": "",
+        "model-configuration": " kmeans = KMeans(n_clusters = i, init = 'k-means++', max_iter = 300, n_init = 10, random_state = 0)"
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "ML collection"
+        },
+        {
+            "href": "https://github.com/FAIRiCUBE/uc3-drosophola-genetics/blob/main/projects/gap_filling/src/data/load_tsv_kmeans_elbow_sli.py",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Reference link"
+        },
+        {
+            "href": "https://github.com/FAIRiCUBE/uc3-drosophola-genetics/blob/main/projects/gap_filling/src/data/load_tsv_kmeans_elbow_sli.py",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Implementation example"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "https://github.com/FAIRiCUBE/uc3-drosophola-genetics/blob/main/projects/gap_filling/data/raw/North_America_50kMutations.tsv",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "comma seperated column data (csv)",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "model-checkpoint": {
+            "href": "classification schema North_America_50kMutations_t_class5.csv",
+            "type": "application/octet-stream",
+            "title": "Model",
+            "description": "comma seperated column data (csv)",
+            "performance": "not available ",
+            "roles": [
+                "ml-model:checkpoint"
+            ]
+        }
+    }
+}
