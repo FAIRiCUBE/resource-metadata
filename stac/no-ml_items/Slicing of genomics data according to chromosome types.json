@@ -1,0 +1,100 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "CEG5Z7KQPR",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "jetschny",
+        "use-case": "UC3",
+        "title": "Slicing of genomics data according to chromosome types",
+        "description": "Slicing of genomics data according to chromosome types",
+        "main-category": "Pre-processing",
+        "objective": "analytics",
+        "datetime": "2025-05-14",
+        "keywords": [
+            "Slicing subsetting genomics data chromosome types"
+        ],
+        "platform": "EOX",
+        "framework": "NumPy",
+        "algorithm": "custom-method",
+        "validation": "",
+        "license": "MIT",
+        "processor-used": "cpu",
+        "operating-system-used": "linux",
+        "use-constraints": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        },
+        {
+            "href": "https://github.com/FAIRiCUBE/uc3-drosophola-genetics/blob/main/projects/gap_filling/src/data/slicing_data_CommonS3_chromosome.py",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Reference link"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "Europe_genomewide_freq.csv\r\nEurope_genomewide_weight.csv\r\nEurope_chromosomes.csv",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "comma separated column data (csv)",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "Europe_chromosomes_freq*.csv\r\nEurope_chromosomes_weight*.csv",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "comma separated column data (csv)",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
