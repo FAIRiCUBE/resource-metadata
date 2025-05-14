@@ -1,0 +1,114 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/ml-model/v1.0.0/schema.json"
+    ],
+    "id": "LFT4VLQJOC",
+    "collection": "ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "jetschny",
+        "use-case": "UC3",
+        "title": "Gap filling of real genomics data based on k-means clustering of populations",
+        "description": "Gap filling of real genomics data based on k-means clustering of populations",
+        "main-category": "Machine Learning",
+        "datetime": "2025-05-14",
+        "keywords": [
+            "Gap filling k-means kmeans clustering"
+        ],
+        "platform": "EOX",
+        "framework": "Scikit-Learn",
+        "algorithm": "K-means",
+        "license": "MIT",
+        "validation": "",
+        "ml-model:type": "ml-model",
+        "ml-model:learning_approach": "supervised",
+        "ml-model:prediction_type": "classification",
+        "ml-model:architecture": "datacubes",
+        "ml-model:training-processor-type": "cpu",
+        "ml-model:training-os": "linux",
+        "use-constraints": "",
+        "model-configuration": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "ML collection"
+        },
+        {
+            "href": "https://github.com/FAIRiCUBE/uc3-drosophola-genetics/blob/main/projects/gap_filling/src/data/load_csv_apply_GapFil_write_csv.py",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Reference link"
+        },
+        {
+            "href": "https://github.com/FAIRiCUBE/uc3-drosophola-genetics/blob/main/projects/gap_filling/src/data/load_csv_apply_GapFil_write_csv.py",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Implementation example"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "https://github.com/FAIRiCUBE/uc3-drosophola-genetics/blob/main/projects/gap_filling/data/raw/Europe_50kMutations_gap5perc_expdist.csv",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "comma separated column data (csv)",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "model-checkpoint": {
+            "href": "https://github.com/FAIRiCUBE/uc3-drosophola-genetics/blob/main/projects/gap_filling/data/raw/North_America_50kMutations_gap5perc_expdist_kmeansfill5.csv",
+            "type": "application/octet-stream",
+            "title": "Model",
+            "description": "comma separated column data (csv)",
+            "performance": "not available",
+            "roles": [
+                "ml-model:checkpoint"
+            ]
+        }
+    }
+}
