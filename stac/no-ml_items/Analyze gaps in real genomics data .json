@@ -1,0 +1,100 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "2VGWTT6QKC",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "jetschny",
+        "use-case": "UC3",
+        "title": "Analyze gaps in real genomics data ",
+        "description": "Analyze gaps in real data example North_America_PoolSNP.001.50.8Jun2023.norep.gapprofile_byrows.txt",
+        "main-category": "Analytics",
+        "objective": "analytics",
+        "datetime": "2025-05-14",
+        "keywords": [
+            "Analyzis data gaps real genomics data "
+        ],
+        "platform": "EOX",
+        "framework": "NumPy",
+        "algorithm": "custom-method",
+        "validation": "",
+        "license": "MIT",
+        "processor-used": "cpu",
+        "operating-system-used": "linux",
+        "use-constraints": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        },
+        {
+            "href": "https://github.com/FAIRiCUBE/uc3-drosophola-genetics/blob/main/projects/gap_filling/src/data/load_txt_analyze%20real%20gaps.py",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Reference link"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "North_America_PoolSNP.001.50.8Jun2023.norep.gapprofile_byrows.txt\r\nEurope_PoolSNP.001.50.8Jun2023.norep.gapprofile_byrows.txt",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "Comma seperated column data",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "Visualization and distribution of gaps as function of gap length",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "no written output",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
