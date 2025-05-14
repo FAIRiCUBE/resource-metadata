@@ -1,0 +1,100 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "3LEY18536K",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "jetschny",
+        "use-case": "UC3",
+        "title": "Add synthetic gaps to complete genomics data",
+        "description": "Add synthetic gaps to complete genomics data after performing the gap analysis of real data",
+        "main-category": "Pre-processing",
+        "objective": "gap-filling",
+        "datetime": "2025-05-14",
+        "keywords": [
+            "insertion synthetic gap complete genomics data"
+        ],
+        "platform": "EOX",
+        "framework": "NumPy",
+        "algorithm": "custom-method",
+        "validation": "",
+        "license": "MIT",
+        "processor-used": "cpu",
+        "operating-system-used": "linux",
+        "use-constraints": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        },
+        {
+            "href": "https://github.com/FAIRiCUBE/uc3-drosophola-genetics/blob/main/projects/gap_filling/src/data/load_tsv_addGaps_write_csv.py",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Reference link"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "https://github.com/FAIRiCUBE/uc3-drosophola-genetics/blob/main/projects/gap_filling/data/raw/Europe_50kMutations.tsv",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "\r\ncomma separated column data (csv)",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "https://github.com/FAIRiCUBE/uc3-drosophola-genetics/blob/main/projects/gap_filling/data/raw/Europe_50kMutations_gap5perc_expdist.csv",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "comma separated column data (csv)",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
