@@ -1,0 +1,109 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/ml-model/v1.0.0/schema.json"
+    ],
+    "id": "EIVU8A712G",
+    "collection": "ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "bachirnilu",
+        "use-case": "UC4",
+        "title": "VGG16 + XGBoost (or LightGBM)",
+        "description": "We used  VGG16 for feature extraction. VGG16 is a 16-layer CNN that was trained on millions of images\r\nfrom the ImageNet database. The we used XGboost for regression and LightGBM for classification of rooftop heights.",
+        "main-category": "Machine Learning",
+        "datetime": "2025-06-17",
+        "keywords": [
+            "Rooftop images",
+            " CNN",
+            " Convolutional Neural network",
+            " XGboost",
+            " regression",
+            " classification",
+            " lightGBM",
+            " classification."
+        ],
+        "platform": "Local Jupyter notebook",
+        "framework": "Scikit-Learn",
+        "algorithm": "CNN - Convolutional-Neural-Network",
+        "license": "CC-BY-4.0",
+        "validation": "",
+        "ml-model:type": "ml-model",
+        "ml-model:learning_approach": "supervised",
+        "ml-model:prediction_type": "regression",
+        "ml-model:architecture": "CNN - Convolutional-Neural-Network",
+        "ml-model:training-processor-type": "gpu",
+        "ml-model:training-os": "linux",
+        "use-constraints": "",
+        "model-configuration": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "ML collection"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "https://www.data.gv.at/katalog/dataset/25b694ad-802b-4f64-bcbc-09897b0dcbf7",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "https://www.data.gv.at/katalog/dataset/25b694ad-802b-4f64-bcbc-09897b0dcbf7",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "model-checkpoint": {
+            "href": "Not available online.",
+            "type": "application/octet-stream",
+            "title": "Model",
+            "description": "The output data is a trained model that estimates rooftop heights from rooftop images.",
+            "performance": "The model showed acceptable results, reaching Mean Squared Error (MSE) of 1.29, Root Mean Squared Error (RMSE) of 1.14 and an R\u00b2 Score of 0.57. This is much better than a dummy model that always predicts the mean, with MSE = 3.01, RMSE 1.73 and R\u00b2 Score = -0.0002. \r\n\r\nLightGBM, with 1,000 estimators, achieves an accuracy of 57.47% with training testing split of 80%-20%. This accuracy can be further improved with more data, higher quality images and more accurate estimation of the reference height, but it is already better than a 25% accuracy of a random classifier. On the other hand, LightGBM achieves an accuracy of 86% on binary classification (distinguishing between high and low rooftops). \r\n",
+            "roles": [
+                "ml-model:checkpoint"
+            ]
+        }
+    }
+}
