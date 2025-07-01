@@ -1,0 +1,104 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "CIBYNVOC54",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "bachirnilu",
+        "use-case": "UC4",
+        "title": "EPISCOPE heuristic",
+        "description": "Energy demand is estimated using EPISCOPE typology based on construction year, building type, and height. No ML used.",
+        "main-category": "Analytics",
+        "objective": "regression",
+        "datetime": "2025-07-01",
+        "keywords": [
+            "Energy",
+            " building",
+            " Oslo",
+            " EPISCOPE\r\n",
+            "jupyter_notebook_available"
+        ],
+        "platform": "EOX",
+        "framework": "NumPy",
+        "algorithm": "custom-method",
+        "validation": "",
+        "license": "CC-BY-NC-4.0",
+        "processor-used": "cpu",
+        "operating-system-used": "linux",
+        "use-constraints": "May depend on the availability and completeness of city-level data.\r\n\r\n"
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        },
+        {
+            "href": "http://episcope.eu/building-typology/",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Reference link"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "https://www.regjeringen.no/en/dep/kld/organisation/selskaper/enova/id2599611/\r\n",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "Enova is a state enterprise owned by the Ministry of Climate and Environment.\r\nIt has been used to get different Oslo building characteristics including Building geometry, construction year, residential type.\r\n",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "The data is under review in Zenodo.",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "Estimated annual energy demand (kWh/year)\r\n",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
