@@ -1,0 +1,119 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/ml-model/v1.0.0/schema.json"
+    ],
+    "id": "VZDCEEG7JM",
+    "collection": "ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "bachirnilu",
+        "use-case": "UC4",
+        "title": "XGBoost Regression for Energy Demand",
+        "description": "Energy demand estimations for the city of Oslo, computed using the XGboost, a tree based Machine Learning approach. The model uses buildings height, construction_year and shared_wall_area as input features.",
+        "main-category": "Machine Learning",
+        "datetime": "2025-07-02",
+        "keywords": [
+            "ML",
+            " XGboost",
+            " energy",
+            " regression",
+            " Oslo",
+            "jupyter_notebook_available"
+        ],
+        "platform": "EOX",
+        "framework": "Scikit-Learn",
+        "algorithm": "Random-Forest-Regression",
+        "license": "CC-BY-NC-4.0",
+        "validation": "",
+        "ml-model:type": "ml-model",
+        "ml-model:learning_approach": "supervised",
+        "ml-model:prediction_type": "regression",
+        "ml-model:architecture": "random-forest",
+        "ml-model:training-processor-type": "cpu",
+        "ml-model:training-os": "linux",
+        "use-constraints": "May depend on the availability and completeness of city-level data",
+        "model-configuration": "XGBRegressor(objective=reg:squarederror, n_estimators=100, learning_rate=0.05, max_depth=6, random_state=42)\r\n80-20 training-testing split."
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "ML collection"
+        },
+        {
+            "href": "https://www.regjeringen.no/en/dep/kld/organisation/selskaper/enova/id2599611/",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Reference link"
+        },
+        {
+            "href": "https://github.com/FAIRiCUBE/uc4-building-stock/blob/main/models/Building_Energy_Oslo.py",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Implementation example"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "https://www.regjeringen.no/en/dep/kld/organisation/selskaper/enova/id2599611/\r\n",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "This data contains the reference building energy data to train the model. ",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "model-checkpoint": {
+            "href": "https://zenodo.org/uploads/15789383",
+            "type": "application/octet-stream",
+            "title": "Model",
+            "description": " A CSV file contains building-level energy demand estimations for the city of Oslo, computed using the XGboost.",
+            "performance": "RMSE = 108.87 kWh/m\u00b2  and R\u00b2 = 0.33",
+            "roles": [
+                "ml-model:checkpoint"
+            ]
+        }
+    }
+}
