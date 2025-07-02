@@ -1,0 +1,94 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "Y6BAR4AJAI",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "gmartirano",
+        "use-case": "common",
+        "title": "test EPSIT2",
+        "description": "test",
+        "main-category": "Analytics",
+        "objective": "analytics",
+        "datetime": "2025-07-02",
+        "keywords": [
+            "keyword 1"
+        ],
+        "platform": "Google Cloud Platform",
+        "framework": "no-framework",
+        "algorithm": "custom-method",
+        "validation": "",
+        "license": "CC",
+        "processor-used": "gpu",
+        "operating-system-used": "windows",
+        "use-constraints": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "https://fairicube-md.epsilon-italia.it",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "text",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": " https://fairicube-md.epsilon-italia.it",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "text",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
