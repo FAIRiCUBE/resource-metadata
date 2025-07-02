@@ -1,0 +1,98 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "X8040TBJSH",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "bachirnilu",
+        "use-case": "UC4",
+        "title": "EPISCOPE-based heuristic",
+        "description": " The method follows a rule-based approach developed in the IEE EPISCOPE and TABULA projects, which estimates energy performance based on key building parameters such as construction year, type, and geometry (height, footprint,..).",
+        "main-category": "Analytics",
+        "objective": "regression",
+        "datetime": "2025-07-02",
+        "keywords": [
+            "Energy",
+            " building",
+            " Rennes",
+            " EPISCOPE",
+            "jupyter_notebook_available"
+        ],
+        "platform": "EOX",
+        "framework": "NumPy",
+        "algorithm": "custom-method",
+        "validation": "",
+        "license": "CC-BY-NC-4.0",
+        "processor-used": "cpu",
+        "operating-system-used": "linux",
+        "use-constraints": "May depend on the availability and completeness of city-level data."
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "https://data.ademe.fr/datasets/dpe-france",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "Public French Government data, including yearly building energy consumption. ",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "https://zenodo.org/uploads/15789207",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "This GeoJson dataset contains building-level energy demand estimations for the city of Rennes using EPISCOPE.",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
