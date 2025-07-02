@@ -1,0 +1,105 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/ml-model/v1.0.0/schema.json"
+    ],
+    "id": "3I4G8ZYTHL",
+    "collection": "ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "susannaioni",
+        "use-case": "UC5",
+        "title": "Ensemble_model_workflow",
+        "description": "Species distribution models (GLM, GAM, and RF) are used to predict habitat suitability across Europe at a 1 km resolution, and across the Alps at a 100 m resolution. These models are trained using species occurrence data from GBIF and a set of environmental predictors (elevation, slope, TPI, TWI, HLI, AI, temperature, seasonal temperature, precipitation, seasonal precipitation).\r\n\r\nModel predictions are generated as probability maps and then combined into an ensemble model. Each individual model contribution to the ensemble is weighted by its True Skill Statistic (TSS), calculated through independent 10-fold cross-validation, stratified by occurrence data.\r\n\r\nThe script outputs include model evaluation statistics (CSV format) and spatial predictions (raster format).",
+        "main-category": "Machine Learning",
+        "datetime": "2025-06-30",
+        "keywords": [
+            "SDM",
+            " ensemble model",
+            " European Habitats",
+            " TSS"
+        ],
+        "platform": "EOX",
+        "framework": "no-framework",
+        "algorithm": "custom-method",
+        "license": "MIT",
+        "validation": "",
+        "ml-model:type": "ml-model",
+        "ml-model:learning_approach": "supervised",
+        "ml-model:prediction_type": "analytics",
+        "ml-model:architecture": "ensemble",
+        "ml-model:training-processor-type": "cpu",
+        "ml-model:training-os": "windows",
+        "use-constraints": "",
+        "model-configuration": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "ML collection"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "https://github.com/FAIRiCUBE/uc5-occurence-cubes/blob/main/S22df_datasource_grouped.csv",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "Characteristics of https://github.com/FAIRiCUBE/uc5-occurence-cubes/tree/main",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "model-checkpoint": {
+            "href": "https://github.com/FAIRiCUBE/uc5-occurence-cubes/blob/main/S22_final_prediction_1km.tif\r\n",
+            "type": "application/octet-stream",
+            "title": "Model",
+            "description": "characteristics of https://github.com/FAIRiCUBE/uc5-occurence-cubes/blob/main/S22_final_prediction_1km.tif\r\n",
+            "performance": "Hyperparameters Used:\r\n\r\n- GLM:\r\nSecond-order polynomial terms are used for all continuous predictors to capture potential nonlinear relationships.\r\nThe model is fitted using a binomial family with a logit link function.\r\n\r\n- GAM:\r\nSpline-based smooth terms are applied to continuous predictors (e.g., elevation, temperature, precipitation) using the s() function from the mgcv package.\r\nA binomial family with a logit link is also used.\r\n\r\n- RF:\r\nThe default hyperparameters from the randomForest package are used. The target variable (layer) is treated as a factor (binary classification).\r\nProbability estimates are extracted from the second column (X1) of the prediction.\r\n\r\nEvaluation Metrics:\r\nModel performance is assessed using 10-fold cross-validation, stratified by presence/absence (the target variable). The following evaluation metrics are computed: True Skill Statistic (TSS), Area Under the ROC Curve (AUC), Cohen's Kappa, Sensitivity, Specificity, Overall Accuracy, Optimal threshold for binarising predictions. \r\nThese metrics are computed for each model and fold using the pROC and irr packages. The TSS value is the primary criterion used to weight models in the final ensemble.\r\n\r\nEnsemble Modelling:\r\nThe ensemble model is constructed by computing a weighted average of the predicted probabilities from the three models (GLM, GAM, RF), where each model\u2019s contribution is proportional to its mean TSS score. The final ensemble prediction is binarised using its own optimal threshold, derived from the evaluation metrics.\r\n\r\nOutputs:\r\n1. Model Evaluation Statistics. CSV file containing all evaluation metrics per model and fold.\r\n2. Raster Outputs. Continuous and binary predictions for each individual model (GLM, GAM, RF) and final ensemble prediction raster combined for all species. \r\n\r\nRun Times:\r\nWhile exact runtimes vary by species and system resources, the workflow supports parallel execution using foreach and furrr (though currently commented out to avoid memory issues).\r\nSpatial predictions, especially for GAMs, are chunked into 32 segments for efficient processing over high-resolution rasters.\r\n\r\nPerformance Summary:\r\nEvaluation via stratified 10-fold cross-validation ensures robust generalisation.\r\nEnsemble models typically outperform individual models due to reduced overfitting and variance.\r\nThe use of multiple metrics provides a comprehensive view of model quality, with TSS used to guide weighting and selection.",
+            "roles": [
+                "ml-model:checkpoint"
+            ]
+        }
+    }
+}
