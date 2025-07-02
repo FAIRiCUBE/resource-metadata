@@ -1,0 +1,98 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "UMHD4KBDWT",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "bachirnilu",
+        "use-case": "UC4",
+        "title": "EPISCOPE heuristic",
+        "description": "Energy demand is estimated using EPISCOPE typology based on construction year, building type, and height. No ML used.",
+        "main-category": "Analytics",
+        "objective": "regression",
+        "datetime": "2025-07-02",
+        "keywords": [
+            "Energy",
+            " building",
+            " Barcelona",
+            " EPISCOPE ",
+            "jupyter_notebook_available"
+        ],
+        "platform": "EOX",
+        "framework": "NumPy",
+        "algorithm": "custom-method",
+        "validation": "",
+        "license": "CC-BY-NC-4.0",
+        "processor-used": "cpu",
+        "operating-system-used": "linux",
+        "use-constraints": "May depend on the availability and completeness of city-level data."
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "https://zenodo.org/records/7225259\r\nPersonal contact.",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "EUBUCCO data.\r\nBuilding features (energy consumption) through Jaume Targa in Barcelona.",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "https://zenodo.org/uploads/15788880",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "This GeoJson dataset containing building-level energy demand estimations for the city of Barcelona, computed using the EPISCOPE heuristic model.",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
