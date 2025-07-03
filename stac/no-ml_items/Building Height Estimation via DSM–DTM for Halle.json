@@ -1,0 +1,97 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "id": "HKMHNK543B",
+    "collection": "no-ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "bachirnilu",
+        "use-case": "UC4",
+        "title": "DSM-DTM Canopy Height",
+        "description": "Subtracting DTM from DSM gives canopy height; aggregated over building polygon\r\n",
+        "main-category": "Analytics",
+        "objective": "regression",
+        "datetime": "2025-07-03",
+        "keywords": [
+            "DSM",
+            " DTM",
+            " canopy",
+            " building height"
+        ],
+        "platform": "EOX",
+        "framework": "gdal",
+        "algorithm": "custom-method",
+        "validation": "",
+        "license": "CC-BY-NC-4.0",
+        "processor-used": "cpu",
+        "operating-system-used": "linux",
+        "use-constraints": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "no-ML collection"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "DSM: https://www.lvermgeo.sachsen-anhalt.de/de/dom2.html\r\nDTM: https://www.lvermgeo.sachsen-anhalt.de/de/dgm2.html",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "Digital Surface Model\r\nDigital Terrain Model",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "output-data-obtained": {
+            "href": "Building GeoTIFF: under review in zenodo",
+            "type": "application/json",
+            "title": "Output data obtained",
+            "description": "10m raster height data.",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
