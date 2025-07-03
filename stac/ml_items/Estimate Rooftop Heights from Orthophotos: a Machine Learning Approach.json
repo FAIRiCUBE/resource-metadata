@@ -45,7 +45,7 @@
         "title": "VGG16 + XGBoost (or LightGBM)",
         "description": "We used  VGG16 for feature extraction. VGG16 is a 16-layer CNN that was trained on millions of images\r\nfrom the ImageNet database. The we used XGboost for regression and LightGBM for classification of rooftop heights.",
         "main-category": "Machine Learning",
-        "datetime": "2025-06-17",
+        "datetime": "2025-07-03",
         "keywords": [
             "Rooftop images",
             " CNN",
@@ -54,7 +54,8 @@
             " regression",
             " classification",
             " lightGBM",
-            " classification."
+            " classification.",
+            "jupyter_notebook_available"
         ],
         "platform": "Local Jupyter notebook",
         "framework": "Scikit-Learn",
@@ -82,6 +83,12 @@
             "href": "./catalog.json",
             "type": "application/json",
             "title": "ML collection"
+        },
+        {
+            "href": "https://github.com/FAIRiCUBE/uc4-building-stock/blob/main/models/XGBoost_Roof_Height.py",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Implementation example"
         }
     ],
     "assets": {
@@ -89,14 +96,14 @@
             "href": "https://www.data.gv.at/katalog/dataset/25b694ad-802b-4f64-bcbc-09897b0dcbf7",
             "type": "Data",
             "title": "Input data used",
-            "description": "https://www.data.gv.at/katalog/dataset/25b694ad-802b-4f64-bcbc-09897b0dcbf7",
+            "description": "Vienna's open governmental portal (LOD2.1 building data)",
             "biases-and-ethical-aspects": "",
             "roles": [
                 "data"
             ]
         },
         "model-checkpoint": {
-            "href": "Not available online.",
+            "href": "Under review in Zenodo",
             "type": "application/octet-stream",
             "title": "Model",
             "description": "The output data is a trained model that estimates rooftop heights from rooftop images.",
