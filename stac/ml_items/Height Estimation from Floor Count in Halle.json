@@ -1,0 +1,104 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/ml-model/v1.0.0/schema.json"
+    ],
+    "id": "61EOBY92RY",
+    "collection": "ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "bachirnilu",
+        "use-case": "UC4",
+        "title": "OSM Levels \u00d7 Constant",
+        "description": "Estimate = floor count \u00d7 c \r\nNumber of levels is derived from OSM.\r\nAfter bruth force, we learned that c is 3.0m.",
+        "main-category": "Machine Learning",
+        "datetime": "2025-07-03",
+        "keywords": [
+            "building height",
+            " number of levels",
+            " raster"
+        ],
+        "platform": "EOX",
+        "framework": "Pandas",
+        "algorithm": "custom-method",
+        "license": "CC-BY-NC-4.0",
+        "validation": "",
+        "ml-model:type": "ml-model",
+        "ml-model:learning_approach": "supervised",
+        "ml-model:prediction_type": "regression",
+        "ml-model:architecture": "datacubes",
+        "ml-model:training-processor-type": "cpu",
+        "ml-model:training-os": "linux",
+        "use-constraints": "",
+        "model-configuration": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "ML collection"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "Open Street Map.\r\nHalle heights.",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "Number of levels in OSM",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "model-checkpoint": {
+            "href": "Geotiff file: under review in Zenodo",
+            "type": "application/octet-stream",
+            "title": "Model",
+            "description": "Tiff file including building Heights band",
+            "performance": "RMSE = 2.41m (Halle)",
+            "roles": [
+                "ml-model:checkpoint"
+            ]
+        }
+    }
+}
