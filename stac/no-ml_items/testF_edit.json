@@ -39,8 +39,8 @@
     "properties": {
         "provider": "fabiovinci",
         "use-case": "common",
-        "title": "testF",
-        "description": "testF",
+        "title": "testF_edit_name",
+        "description": "testF_edit_descr",
         "main-category": "Pre-processing",
         "objective": "classification",
         "datetime": "2025-07-03",
