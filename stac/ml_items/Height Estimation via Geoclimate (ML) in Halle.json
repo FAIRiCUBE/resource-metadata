@@ -1,0 +1,105 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/ml-model/v1.0.0/schema.json"
+    ],
+    "id": "9WPG2ZXHA8",
+    "collection": "ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "bachirnilu",
+        "use-case": "UC4",
+        "title": "Geoclimate Random Forest",
+        "description": "This GeoTIFF dataset contains estimated building heights for Halle, Germany, produced using the Geoclimate model\u2014an open-source geospatial processing toolbox implementing a random forest regression algorithm. The model was trained on a dataset covering 14 French communes, using ground truth building heights provided by BDTopo (IGN France).\r\n\r\nFor inference, the model automatically retrieves building footprints from OpenStreetMap (OSM) and computes a set of 62 geospatial indicators describing each building s local environment (e.g. density, proximity to other structures, land use context). These indicators serve as input features to the trained random forest, which predicts the building height.",
+        "main-category": "Machine Learning",
+        "datetime": "2025-07-03",
+        "keywords": [
+            "height",
+            " geoclimate",
+            " building",
+            " halle"
+        ],
+        "platform": "EOX",
+        "framework": "no-framework",
+        "algorithm": "Random-Forest-Regression",
+        "license": "CC-BY-NC-4.0",
+        "validation": "",
+        "ml-model:type": "ml-model",
+        "ml-model:learning_approach": "supervised",
+        "ml-model:prediction_type": "regression",
+        "ml-model:architecture": "random-forest",
+        "ml-model:training-processor-type": "cpu",
+        "ml-model:training-os": "linux",
+        "use-constraints": "Model needs debugging for big cities",
+        "model-configuration": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "ML collection"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "https://www.openstreetmap.org/#map=5/65.40/17.86\r\nhttps://gmd.copernicus.org/articles/15/7505/2022/",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "OSM for feature extraction.\r\nThe Geoclimate trained model.",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "model-checkpoint": {
+            "href": "Geotiff under Review in Zenodo",
+            "type": "application/octet-stream",
+            "title": "Model",
+            "description": "Rasterized height layer",
+            "performance": "RMSE = 3.18 m",
+            "roles": [
+                "ml-model:checkpoint"
+            ]
+        }
+    }
+}
