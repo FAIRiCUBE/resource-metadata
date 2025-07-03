@@ -1,0 +1,113 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/ml-model/v1.0.0/schema.json"
+    ],
+    "id": "A4EFUWM0Z1",
+    "collection": "ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "bachirnilu",
+        "use-case": "UC4",
+        "title": "XGBoost Regression for Energy Demand",
+        "description": "Energy demand estimations for the city of Rennes, computed using the XGboost, a tree based Machine Learning approach. The model uses buildings number_of_levels, area_of_heat_loss_opaque_vertical_walls, year_of_construction as input features.",
+        "main-category": "Machine Learning",
+        "datetime": "2025-07-03",
+        "keywords": [
+            "ML",
+            " XGboost",
+            " energy",
+            " regression",
+            " Rennes",
+            "jupyter_notebook_available"
+        ],
+        "platform": "EOX",
+        "framework": "Scikit-Learn",
+        "algorithm": "Random-Forest-Regression",
+        "license": "CC-BY-NC-4.0",
+        "validation": "",
+        "ml-model:type": "ml-model",
+        "ml-model:learning_approach": "supervised",
+        "ml-model:prediction_type": "regression",
+        "ml-model:architecture": "random-forest",
+        "ml-model:training-processor-type": "cpu",
+        "ml-model:training-os": "linux",
+        "use-constraints": "May depend on the availability and completeness of city-level data",
+        "model-configuration": "xgb.XGBRegressor(objective=reg:squarederror, n_estimators=125, learning_rate=0.15, max_depth=5, random_state=42)"
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "ML collection"
+        },
+        {
+            "href": "https://github.com/FAIRiCUBE/uc4-building-stock/blob/main/models/Building_Energy_Rennes.py",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Implementation example"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "https://data.ademe.fr/datasets/dpe-france",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "Public French Government data, including yearly building energy consumption.",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "model-checkpoint": {
+            "href": "Under review in Zenodo",
+            "type": "application/octet-stream",
+            "title": "Model",
+            "description": "A csv file containing the computed energy demand of buildings in Barcelona using machine learning.",
+            "performance": "Root Mean Squared Error (RMSE): 62.34\r\nR\u00b2 Score: 0.48",
+            "roles": [
+                "ml-model:checkpoint"
+            ]
+        }
+    }
+}
