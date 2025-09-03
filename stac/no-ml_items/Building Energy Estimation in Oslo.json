@@ -39,7 +39,7 @@
     "properties": {
         "provider": "bachirnilu",
         "use-case": "UC4",
-        "title": "EPISCOPE heuristic",
+        "title": "Building Energy Estimation in Oslo (EPISCOPE heuristic)",
         "description": "Energy demand is estimated using EPISCOPE typology based on construction year, building type, and height. No ML used.",
         "main-category": "Analytics",
         "objective": "regression",
