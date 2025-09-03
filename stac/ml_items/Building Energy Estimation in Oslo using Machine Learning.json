@@ -42,7 +42,7 @@
     "properties": {
         "provider": "bachirnilu",
         "use-case": "UC4",
-        "title": "XGBoost Regression for Energy Demand",
+        "title": "Building Energy Estimation in Oslo using Machine Learning",
         "description": "Energy demand estimations for the city of Oslo, computed using the XGboost, a tree based Machine Learning approach. The model uses buildings height, construction_year and shared_wall_area as input features.",
         "main-category": "Machine Learning",
         "datetime": "2025-07-02",
