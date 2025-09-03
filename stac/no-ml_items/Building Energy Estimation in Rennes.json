@@ -39,7 +39,7 @@
     "properties": {
         "provider": "bachirnilu",
         "use-case": "UC4",
-        "title": "EPISCOPE-based heuristic",
+        "title": "Building Energy Estimation in Rennes (EPISCOPE-based heuristic)",
         "description": " The method follows a rule-based approach developed in the IEE EPISCOPE and TABULA projects, which estimates energy performance based on key building parameters such as construction year, type, and geometry (height, footprint,..).",
         "main-category": "Analytics",
         "objective": "regression",
