@@ -42,7 +42,7 @@
     "properties": {
         "provider": "bachirnilu",
         "use-case": "UC4",
-        "title": "XGBoost Regression for Energy Demand",
+        "title": "Building Energy Estimation in Rennes using Machine Learning",
         "description": "Energy demand estimations for the city of Rennes, computed using the XGboost, a tree based Machine Learning approach. The model uses buildings number_of_levels, area_of_heat_loss_opaque_vertical_walls, year_of_construction as input features.",
         "main-category": "Machine Learning",
         "datetime": "2025-07-03",
