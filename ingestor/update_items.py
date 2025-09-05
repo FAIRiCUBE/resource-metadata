@@ -9,10 +9,10 @@ password = os.environ["PASSWORD"]
 urls = [
     {
         "catalog": "https://fairicube.github.io/resource-metadata/ml_items/catalog.json",
-        "api": "https://stacapi-write.eoxhub.fairicube.eu/collections/ML collection/items"
+        "api": "https://stacapi-write.fairicube.hub-otc-sc.eox.at/collections/ML collection/items"
     }, {
         "catalog": "https://fairicube.github.io/resource-metadata/no-ml_items/catalog.json",
-        "api": "https://stacapi-write.eoxhub.fairicube.eu/collections/no-ML collection/items"
+        "api": "https://stacapi-write.fairicube.hub-otc-sc.eox.at/collections/no-ML collection/items"
     }
 ]
 
