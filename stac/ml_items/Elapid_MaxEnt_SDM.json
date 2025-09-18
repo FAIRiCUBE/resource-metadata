@@ -1,0 +1,138 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/ml-model/v1.0.0/schema.json"
+    ],
+    "id": "BS7RJHE2XD",
+    "collection": "ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "hekke006",
+        "use-case": "UC2",
+        "title": "Elapid",
+        "description": "Notebook for MaxEnt species distribution modelling",
+        "main-category": "Machine Learning",
+        "datetime": "2025-09-18",
+        "keywords": [
+            "MaxEnt",
+            " SDM",
+            " elapid",
+            " species occurence",
+            "jupyter_notebook_available"
+        ],
+        "platform": "EOX",
+        "framework": "no-framework",
+        "algorithm": "custom-method",
+        "license": "CC-BY-4.0",
+        "validation": "",
+        "ml-model:type": "ml-model",
+        "ml-model:learning_approach": "supervised",
+        "ml-model:prediction_type": "gap-filling",
+        "ml-model:architecture": "probabilistic-model",
+        "ml-model:training-processor-type": "cpu",
+        "ml-model:training-os": "windows",
+        "use-constraints": "",
+        "model-configuration": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "ML collection"
+        },
+        {
+            "href": "https://earth-chris.github.io/elapid/",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Reference link"
+        },
+        {
+            "href": "https://earth-chris.github.io/elapid/examples/MaxentSimpleModel/",
+            "rel": "about",
+            "type": "text/html",
+            "title": "Implementation example"
+        }
+    ],
+    "assets": {
+        "input-data-used-1": {
+            "href": "https://doi.org/10.5281/zenodo.17152283\r\n",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "Characteristics of https://doi.org/10.5281/zenodo.17152283\r\nThe input data of bird occurence was used and a split of 80% (training) and 20% (test) was applied.\r\n\r\n",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "input-data-used-2": {
+            "href": "https://catalog.fairicube.hub-otc-sc.eox.at/collections/index/items/SENTINEL2_L2A_MOSAIC_120\r\n",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "Characteristics of https://catalog.fairicube.hub-otc-sc.eox.at/collections/index/items/SENTINEL2_L2A_MOSAIC_120\r\nused to calculate NDVI for the months february, april, july and september through the rasdaman functionality, which was used as a predictor for bird occurence\r\n\r\n",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "input-data-used-3": {
+            "href": "https://catalog.fairicube.hub-otc-sc.eox.at/collections/index/items/LGN_Monitoring",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "Characteristics of https://catalog.fairicube.hub-otc-sc.eox.at/collections/index/items/LGN_Monitoring\r\nThis dataset contains monitoring classes for land use of the netherlands, which was used as a predictor for bird occurence",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "model-checkpoint": {
+            "href": "https://doi.org/10.5281/zenodo.17151988",
+            "type": "application/octet-stream",
+            "title": "Model",
+            "description": "Characteristics of https://doi.org/10.5281/zenodo.17151988\r\nRaster file per bird species with modelled probability of occurence\r\n",
+            "performance": "The MaxEnt modelling was evaluated using the AUC value and Omission Rate, for the arable region the average AUC value was 0.833 and average omission rate was 0.197. For the agricultural grassland region the average AUC value was 0.846 and average omission rate was 0.330.",
+            "roles": [
+                "ml-model:checkpoint"
+            ]
+        }
+    }
+}
