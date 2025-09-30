@@ -1,0 +1,110 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/ml-model/v1.0.0/schema.json"
+    ],
+    "id": "JX2ZJJ0KGW",
+    "collection": "ML collection",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -180,
+        -90,
+        180,
+        90
+    ],
+    "properties": {
+        "provider": "vittekm",
+        "use-case": "UC2",
+        "title": "Causal Machine Learning Model",
+        "description": "In the Causal Machine Learning script was we explored the use of Causal Graph Analysis within DoWhy package to proof the expected causal correlations between crop rotation index and species richness. There are three steps in causal graph analysis: (i) Deriving an estimand from a graph of the expected correlations. This estimand is the causal quantity we want to know about, e.g., \u201cwhat is the average increase in farmland bird species richness if the crop rotation index is increased by one unit?\u201d; (ii) Computation of the estimate--the numerical approximation of the estimand, derived from the input data; (iii) Refutal of the estimate by checking if the result holds up under possible violations, such as a placebo test, the adding of random confounders, or a data subset test.",
+        "main-category": "Machine Learning",
+        "datetime": "2025-09-30",
+        "keywords": [
+            "Causal Machine Learning",
+            " Crop Rotation Index",
+            " Species Richness",
+            " Treatment",
+            " Outcome",
+            " Confounders",
+            " Covariates",
+            " Treatment Effect",
+            " Refutal "
+        ],
+        "platform": "EOX",
+        "framework": "no-framework",
+        "algorithm": "custom-method",
+        "license": "CC-BY-4.0",
+        "validation": "",
+        "ml-model:type": "ml-model",
+        "ml-model:learning_approach": "supervised",
+        "ml-model:prediction_type": "analytics",
+        "ml-model:architecture": "probabilistic-model",
+        "ml-model:training-processor-type": "cpu",
+        "ml-model:training-os": "windows",
+        "use-constraints": "",
+        "model-configuration": ""
+    },
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "Root"
+        },
+        {
+            "rel": "parent",
+            "href": "./catalog.json",
+            "type": "application/json",
+            "title": "ML collection"
+        }
+    ],
+    "assets": {
+        "input-data-used": {
+            "href": "https://catalog.fairicube.hub-otc-sc.eox.at/collections/index/items/ADC_Crop_Rotation_Index\r\n",
+            "type": "Data",
+            "title": "Input data used",
+            "description": "The crop rotation index is an indicator for the extent diverse crops have been planted and the soil has been managed with care during the past 6 years.",
+            "biases-and-ethical-aspects": "",
+            "roles": [
+                "data"
+            ]
+        },
+        "model-checkpoint": {
+            "href": "Estimated effect:0.32807702298583796\r\nNew effect:0.32807699643189564\r\np value:0.88",
+            "type": "application/octet-stream",
+            "title": "Model",
+            "description": "Using the causal machine learning and our defined causal graph, we were able to confirm a positive causal relationship between the indicator of agricultural activity - crop rotation index and biodiversity indicator - species richness. The estimated effect, indicating that a score on the crop rotation index is associated with an increase in species richness. Additionally, we used the refutation function to validate the robustness of this causal relationship. This function replaces the treatment variable (crop rotation index) with random variables and checks whether the estimated causal relationship remains consistent. In our case, the new estimated value was, a negligible difference, further reinforcing the validity of our findings.",
+            "performance": "Result Details Refutation Result:\r\n\r\n    Refute: Use a Placebo Treatment\r\n    Estimated effect:0.3280770229854436\r\n    New effect:0.0\r\n    p value:1.0\r\n\r\nEstimated Effect: This is the original causal estimate obtained from the model. It suggests that a one-unit increase in the treatment variable (crop_rotation_frequency) results in a 0.328-unit increase in species_abundance, on average.\r\n\r\nNew Effect (Placebo Estimate): This is the causal effect estimated using the randomly generated placebo treatment variable. Ideally, this should be close to 0, as the placebo variable should have no causal relationship with the outcome.\r\n\r\np-value: The p-value indicates the likelihood of observing the difference between the estimated effect and the placebo effect if the original estimate were valid. A high p-value (typically above 0.05) suggests that the placebo effect is not significantly different from the original causal estimate. This weakens confidence in the robustness of the causal estimate.\r\n",
+            "roles": [
+                "ml-model:checkpoint"
+            ]
+        }
+    }
+}
